@@ -24,7 +24,7 @@ const Header = () => {
   // };
 
   return (
-    <div className="container header">
+    <div className="header-container header">
       <AppLogo className="header-logo" />
       <nav className="header-nav">
         <a href="#">
