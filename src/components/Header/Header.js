@@ -28,16 +28,16 @@ const Header = () => {
       <AppLogo className="header-logo" />
       <nav className="header-nav">
         <a href="#">
-          <span>Work</span>
+          <span className="header-nav-item">Work</span>
         </a>
         <a href="#">
-          <span>Company</span>
+          <span className="header-nav-item">Company</span>
         </a>
         <a href="#">
-          <span>Team</span>
+          <span className="header-nav-item">Team</span>
         </a>
         <a href="#">
-          <span>Contact</span>
+          <span className="header-nav-item">Contact</span>
         </a>
       </nav>
     </div>
