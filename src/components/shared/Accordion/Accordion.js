@@ -25,8 +25,8 @@ const Accordion = ({ title, details }) => {
 };
 
 Accordion.propTypes = {
-  details: PropTypes.string,
-  title: PropTypes.string,
+  details: PropTypes.string.isRequired,
+  title: PropTypes.string.isRequired,
 };
 
 export default Accordion;

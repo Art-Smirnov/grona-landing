@@ -1,9 +1,10 @@
 import Header from './components/Header';
 import Hero from './components/Hero';
 import CaseStudies from './components/CaseStudies';
+import Capabilities from './components/Capabilities';
+import Team from './components/Team';
 
 import './App.sass';
-import Capabilities from './components/Capabilities';
 
 function App() {
   return (
@@ -12,6 +13,7 @@ function App() {
       <Hero />
       <CaseStudies />
       <Capabilities />
+      <Team />
     </div>
   );
 }
