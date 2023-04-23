@@ -1,0 +1,23 @@
+@import '../../../styles/variables'
+
+.MuiAccordion-root,
+.MuiAccordionSummary-root,
+.MuiAccordionDetails-root
+
+  &:before
+    background-color: $gray
+
+
+.accordion
+  margin-left: 128px
+
+  &.Mui-expanded
+    margin: 16px 0 16px 128px
+
+
+.accordion-summary
+  & > div
+    margin: 16px 0
+
+.accordion-text
+  color: $white

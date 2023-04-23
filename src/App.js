@@ -3,6 +3,7 @@ import Hero from './components/Hero';
 import CaseStudies from './components/CaseStudies';
 
 import './App.sass';
+import Capabilities from './components/Capabilities';
 
 function App() {
   return (
@@ -10,6 +11,7 @@ function App() {
       <Header />
       <Hero />
       <CaseStudies />
+      <Capabilities />
     </div>
   );
 }
