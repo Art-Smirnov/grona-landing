@@ -3,6 +3,7 @@ import Hero from './components/Hero';
 import CaseStudies from './components/CaseStudies';
 import Capabilities from './components/Capabilities';
 import Team from './components/Team';
+import Contact from './components/Contact';
 
 import './App.sass';
 
@@ -14,6 +15,7 @@ function App() {
       <CaseStudies />
       <Capabilities />
       <Team />
+      <Contact />
     </div>
   );
 }

@@ -1,0 +1,71 @@
+@import '../../styles/variables'
+
+.contact
+  &.container
+    margin-bottom: 40px
+
+.contact-titles
+  display: flex
+  margin-bottom: 40px
+
+.contact-sub-title
+  font-weight: 600
+  font-size: 12px
+  line-height: 15px
+  width: 74px
+  margin-right: 50px
+
+.contact-title
+  font-weight: 600
+  font-size: 38px
+  line-height: 47px
+  margin: 0
+
+
+.form
+  display: flex
+  margin-left: 128px
+  align-items: flex-end
+  justify-content: space-between
+
+  .form-inputs
+    display: flex
+    flex-direction: column
+    width: 600px
+
+  .form-input
+    &:not(:last-child)
+      margin-bottom: 20px
+
+    .MuiInputBase-root:before
+      border-bottom: 1px solid $gray
+
+    .MuiInputBase-root:after
+      border-bottom: 2px solid $white
+
+    label
+      color: $gray
+
+    input
+      color: $white
+
+
+  .form-button
+    display: flex
+    align-items: center
+    cursor: pointer
+    border-radius: 6px
+    border: transparent
+    color: $white
+    background-color: transparent
+    transition: background-color 0.2s ease-in-out
+
+    &:hover
+      background-color: $gray
+
+    span
+      padding: 8px
+      font-weight: 600
+      font-size: 20px
+      line-height: 20px
+      margin-right: 5px
