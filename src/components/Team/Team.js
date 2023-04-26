@@ -1,10 +1,4 @@
-import zhenyaPhoto from '../images/zhanya.jpg';
-import artemPhoto from '../images/artem.jpg';
-import ivanPhoto from '../images/Ivan.jpg';
-
 import './Team.sass';
-
-import TeamMemberCard from './TeamMemberCard';
 
 const Team = () => {
   return (
@@ -15,23 +9,23 @@ const Team = () => {
       </div>
 
       <div className="team-container">
-        <TeamMemberCard
-          position="UX Designer"
-          name="Anisimov Ivan"
-          photo={ivanPhoto}
-        />
+        <div className="card card0">
+          <div className="border">
+            <h2>Anisimov Ivan</h2>
+          </div>
+        </div>
 
-        <TeamMemberCard
-          position="Backend Developer"
-          name="Evgeniy Kaieta"
-          photo={zhenyaPhoto}
-        />
+        <div className="card card1">
+          <div className="border">
+            <h2>Evgeniy Kaieta</h2>
+          </div>
+        </div>
 
-        <TeamMemberCard
-          position="Front End Developer"
-          name="Smirnov Artem"
-          photo={artemPhoto}
-        />
+        <div className="card card2">
+          <div className="border">
+            <h2>Smirnov Artem</h2>
+          </div>
+        </div>
       </div>
     </div>
   );
