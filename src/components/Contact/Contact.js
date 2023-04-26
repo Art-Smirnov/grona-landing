@@ -1,7 +1,8 @@
 import { useState } from 'react';
 import { TextField } from '@mui/material';
 import ArrowForwardIcon from '@mui/icons-material/ArrowForward';
-import { ReCAPTCHA } from 'react-google-recaptcha';
+// eslint-disable-next-line import/no-named-as-default
+import ReCAPTCHA from 'react-google-recaptcha';
 
 import './Contact.sass';
 
@@ -87,11 +88,13 @@ const Contact = () => {
             error={!!formErrors.description}
             helperText={formErrors.description}
           />
+          <ReCAPTCHA
+            theme="dark"
+            sitekey="6LeIxAcTAAAAAJcZVRqyHh71UMIEGNQ_MXjiZKhI"
+            onChange={handleCaptchaChange}
+          />
         </div>
-        <ReCAPTCHA
-          sitekey="6LeIxAcTAAAAAJcZVRqyHh71UMIEGNQ_MXjiZKhI"
-          onChange={handleCaptchaChange}
-        />
+
         <button className="form-button" onClick={handleSendButtonClick}>
           <span>Send</span>
           <ArrowForwardIcon />
