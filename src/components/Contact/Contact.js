@@ -1,13 +1,14 @@
+import { useState } from 'react';
 import { TextField } from '@mui/material';
 import ArrowForwardIcon from '@mui/icons-material/ArrowForward';
-import { useState } from 'react';
+import { ReCAPTCHA } from 'react-google-recaptcha';
 
 import './Contact.sass';
 
 const Contact = () => {
   const [formData, setFormData] = useState({ email: '', description: '' });
   const [formErrors, setFormErrors] = useState({ email: '', description: '' });
-
+  const [isCaptchaVerified, setIsCaptchaVerified] = useState(false);
   const handleInputChange = (e) => {
     setFormData({
       ...formData,
@@ -17,6 +18,12 @@ const Contact = () => {
 
   const handleSendButtonClick = (e) => {
     e.preventDefault();
+
+    if (!isCaptchaVerified) {
+      alert('Please verify that you are a human!');
+      return;
+    }
+
     if (validateForm()) {
       alert(`Email: ${formData.email}\nDescription: ${formData.description}`);
       setFormData({ email: '', description: '' });
@@ -43,6 +50,10 @@ const Contact = () => {
 
     setFormErrors(newErrors);
     return isValid;
+  };
+
+  const handleCaptchaChange = (value) => {
+    setIsCaptchaVerified(value);
   };
 
   return (
@@ -77,7 +88,10 @@ const Contact = () => {
             helperText={formErrors.description}
           />
         </div>
-
+        <ReCAPTCHA
+          sitekey="6LeIxAcTAAAAAJcZVRqyHh71UMIEGNQ_MXjiZKhI"
+          onChange={handleCaptchaChange}
+        />
         <button className="form-button" onClick={handleSendButtonClick}>
           <span>Send</span>
           <ArrowForwardIcon />
