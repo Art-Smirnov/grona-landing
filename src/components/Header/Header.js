@@ -1,4 +1,10 @@
 import { ReactComponent as AppLogo } from '../images/grona_logo.svg';
+import { ReactComponent as LinkedInIcon } from '../images/linkedin.svg';
+import { ReactComponent as UpWorkIcon } from '../images/up.svg';
+import { ReactComponent as InstagramIcon } from '../images/instagram.svg';
+import { ReactComponent as FacebookIcon } from '../images/facebook.svg';
+import { ReactComponent as TelegramIcon } from '../images/telegram.svg';
+import { ReactComponent as EmailIcon } from '../images/email.svg';
 
 import './Header.sass';
 
@@ -40,6 +46,58 @@ const Header = () => {
           <span className="header-nav-item">Contact</span>
         </a>
       </nav>
+
+      <div className="header-links">
+        <a
+          className="header-links-item"
+          target="_blank"
+          href="https://www.linkedin.com/"
+          rel="noreferrer"
+        >
+          <LinkedInIcon />
+        </a>
+        <a
+          className="header-links-item"
+          target="_blank"
+          href="https://www.upwork.com/"
+          rel="noreferrer"
+        >
+          <UpWorkIcon />
+        </a>
+        <a
+          className="header-links-item"
+          target="_blank"
+          href="https://www.instagram.com/"
+          rel="noreferrer"
+        >
+          <InstagramIcon />
+        </a>
+        <a
+          className="header-links-item"
+          target="_blank"
+          href="https://www.facebook.com/"
+          rel="noreferrer"
+        >
+          <FacebookIcon />
+        </a>
+        <a
+          className="header-links-item"
+          target="_blank"
+          href="/"
+          rel="noreferrer"
+        >
+          <TelegramIcon />
+        </a>
+
+        <a
+          className="header-links-item"
+          target="_blank"
+          href="/"
+          rel="noreferrer"
+        >
+          <EmailIcon />
+        </a>
+      </div>
     </div>
   );
 };
