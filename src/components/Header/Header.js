@@ -30,7 +30,7 @@ const Header = () => {
   // };
 
   return (
-    <div className="header-container header">
+    <div className="container header">
       <AppLogo className="header-logo" />
       <nav className="header-nav">
         <a href="#">
@@ -54,7 +54,7 @@ const Header = () => {
           href="https://www.linkedin.com/"
           rel="noreferrer"
         >
-          <LinkedInIcon />
+          <LinkedInIcon className="header-links-icon" />
         </a>
         <a
           className="header-links-item"
@@ -62,7 +62,7 @@ const Header = () => {
           href="https://www.upwork.com/"
           rel="noreferrer"
         >
-          <UpWorkIcon />
+          <UpWorkIcon className="header-links-icon" />
         </a>
         <a
           className="header-links-item"
@@ -70,7 +70,7 @@ const Header = () => {
           href="https://www.instagram.com/"
           rel="noreferrer"
         >
-          <InstagramIcon />
+          <InstagramIcon className="header-links-icon" />
         </a>
         <a
           className="header-links-item"
@@ -78,7 +78,7 @@ const Header = () => {
           href="https://www.facebook.com/"
           rel="noreferrer"
         >
-          <FacebookIcon />
+          <FacebookIcon className="header-links-icon" />
         </a>
         <a
           className="header-links-item"
@@ -86,7 +86,7 @@ const Header = () => {
           href="/"
           rel="noreferrer"
         >
-          <TelegramIcon />
+          <TelegramIcon className="header-links-icon" />
         </a>
 
         <a
@@ -95,7 +95,7 @@ const Header = () => {
           href="/"
           rel="noreferrer"
         >
-          <EmailIcon />
+          <EmailIcon className="header-links-icon" />
         </a>
       </div>
     </div>
