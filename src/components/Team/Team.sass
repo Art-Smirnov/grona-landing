@@ -24,67 +24,66 @@
   justify-content: space-between
   margin-left: 128px
 
+  .border
+    height: 314px
+    width: 250px
+    background: transparent
+    border-radius: 10px
+    transition: border 1s
+    position: relative
 
-.border
-  height: 314px
-  width: 250px
-  background: transparent
-  border-radius: 10px
-  transition: border 1s
-  position: relative
+  .border:hover
+    border: 1px solid $white
 
-.border:hover
-  border: 1px solid $white
+  .card
+    height: 324px
+    width: 240px
+    border-radius: 10px
+    transition: background 0.8s
+    overflow: hidden
+    background: #000
+    box-shadow: 0 70px 63px -60px #000
+    display: flex
+    justify-content: center
+    align-items: center
+    position: relative
 
-.card
-  height: 324px
-  width: 240px
-  border-radius: 10px
-  transition: background 0.8s
-  overflow: hidden
-  background: #000
-  box-shadow: 0 70px 63px -60px #000
-  display: flex
-  justify-content: center
-  align-items: center
-  position: relative
+  .card0
+    background: url("../images/Ivan.jpg") center center no-repeat
+    background-size: 250px
 
-.card0
-  background: url("../images/Ivan.jpg") center center no-repeat
-  background-size: 250px
+  .card0:hover
+    background: url("../images/Ivan.jpg") left center no-repeat
+    background-size: 500px
 
-.card0:hover
-  background: url("../images/Ivan.jpg") left center no-repeat
-  background-size: 500px
+  .card0:hover h2
+    opacity: 1
 
-.card0:hover h2
-  opacity: 1
+  .card1
+    background: url("../images/zhenya.jpg") center center no-repeat
+    background-size: 250px
 
-.card1
-  background: url("../images/zhenya.jpg") center center no-repeat
-  background-size: 250px
+  .card1:hover
+    background: url("../images/zhenya.jpg") left center no-repeat
+    background-size: 500px
 
-.card1:hover
-  background: url("../images/zhenya.jpg") left center no-repeat
-  background-size: 500px
-
-.card1:hover h2
-  opacity: 1
+  .card1:hover h2
+    opacity: 1
 
 
-.card2
-  background: url("../images/artem.jpg") center center no-repeat
-  background-size: 250px
+  .card2
+    background: url("../images/artem.jpg") center center no-repeat
+    background-size: 250px
 
-.card2:hover
-  background: url("../images/artem.jpg") left center no-repeat
-  background-size: 500px
+  .card2:hover
+    background: url("../images/artem.jpg") left center no-repeat
+    background-size: 500px
 
-.card2:hover h2
-  opacity: 1
+  .card2:hover h2
+    opacity: 1
 
-h2
-  color: $white
-  margin: 20px
-  opacity: 0
-  transition: opacity 1s
+  h2
+    color: $white
+    margin: 20px
+    opacity: 0
+    transition: opacity 1s
