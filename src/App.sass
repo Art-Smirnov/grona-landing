@@ -1,11 +1,23 @@
 .App
-  padding-top: 38px
+  padding-top: 32px
+
+  @media screen and (min-width: 576px)
+    padding-top: 38px
+
 
 .container
   margin: 0 auto
-  padding: 0 80px
-  max-width: 1280px
+  padding: 0 10px
 
-  //@media screen and (min-width: 1042px)
-  //  max-width: 1022px
-  //  padding: 0 32px
+  @media screen and (min-width: 576px)
+    padding: 0 20px
+
+  @media screen and (min-width: 768px)
+    padding: 0 40px
+
+  @media screen and (min-width: 1024px)
+    padding: 0 80px
+
+  @media screen and (min-width: 1440px)
+    padding: 0 116px
+    max-width: 1208px
