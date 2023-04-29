@@ -58,7 +58,7 @@ const Contact = () => {
   };
 
   return (
-    <div className="container contact">
+    <div id="contact" className="container contact">
       <div className="contact-titles">
         <span className="contact-sub-title">
           Tell us about yourself and the project

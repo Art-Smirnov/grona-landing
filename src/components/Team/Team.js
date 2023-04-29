@@ -2,7 +2,7 @@ import './Team.sass';
 
 const Team = () => {
   return (
-    <div className="container team">
+    <div id="team" className="container team">
       <div className="team-titles">
         <span className="team-exclamation">!</span>
         <h2 className="team-title">Our Team</h2>

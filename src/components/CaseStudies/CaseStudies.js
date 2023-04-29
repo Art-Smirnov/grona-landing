@@ -7,7 +7,7 @@ import './CaseStudies.sass';
 
 const CaseStudies = () => {
   return (
-    <div className="container case-studies">
+    <div id="case-studies" className="container case-studies">
       <div className="case-studies-titles">
         <span className="case-studies-quantity">1 &mdash; 5</span>
         <h2 className="case-studies-title">Case Studies</h2>
