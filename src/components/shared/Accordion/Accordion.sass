@@ -1,24 +1,48 @@
 @import '../../../styles/variables'
 
-.MuiAccordion-root,
-.MuiAccordionSummary-root,
-.MuiAccordionDetails-root
-  background-color: transparent !important
-
-  &:before
-    background-color: $gray !important
-
-
 .accordion
-  margin-left: 128px
+  max-width: 730px
+  margin-left: 76px
+
+  & .MuiAccordionSummary-root
+    height: 88px
+    padding-left: 0
+
+  & .MuiAccordionDetails-root
+    padding-left: 0
+
+  &.MuiAccordion-root
+    background-color: transparent
+    box-shadow: unset
+    border-bottom: 1px solid $gray
+    border-bottom-left-radius: unset !important
+    border-bottom-right-radius: unset !important
+
+    &.first
+      border-top: 1px solid $gray
+
+  @media screen and (min-width: 576px)
+    margin-left: 131px
 
   &.Mui-expanded.MuiPaper-root
-    margin: 16px 0 16px 128px
+    margin: 0 0 0 76px
 
+    @media screen and (min-width: 576px)
+      margin-left: 131px
 
   .accordion-summary
     & > div
       margin: 16px 0
 
-.accordion-text
+
+.accordion-title
   color: $white
+  font-weight: 600
+  font-size: 18px
+  line-height: 22px
+
+.accordion-details
+  color: $white
+  font-size: 14px
+  line-height: 140%
+
