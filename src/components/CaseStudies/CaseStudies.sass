@@ -1,37 +1,90 @@
-.case-studies
-  &.container
-    margin-bottom: 40px
+@import '../../styles/variables'
 
-.case-studies-titles
+.case-studies
   display: flex
-  margin-bottom: 40px
+
+  &.container
+    margin-bottom: 80px
+
+
+.case-studies-subtitles
+  display: flex
+  flex-direction: column
+  width: min-content
+  margin-right: 39px
+
+  @media screen and (min-width: 576px)
+    margin-right: 95px
+
+  @media screen and (min-width: 1440px)
+    margin-right: 126px
 
 .case-studies-quantity
   font-weight: 600
   font-size: 12px
   line-height: 15px
-  margin-right: 100px
+  margin-bottom: 214px
+
+  @media screen and (min-width: 576px)
+    margin-bottom: 142px
+
+  @media screen and (min-width: 768px)
+    margin-bottom: 173px
 
 .case-studies-title
   font-weight: 600
-  font-size: 38px
-  line-height: 47px
-  margin: 0
+  font-size: 24px
+  line-height: 30px
+  margin: 0 0 32px
+
+  @media screen and (min-width: 576px)
+    font-size: 32px
+    line-height: 40px
+
+  @media screen and (min-width: 768px)
+    font-size: 38px
+    line-height: 47px
 
 .case-studies-swiper
-  margin-left: 128px
+  height: 400px
+  //margin-left: 128px
   .swiper-button-next,
   .swiper-button-prev
-    color: #82858C
+    color: $gray
 
-  .swiper-pagination-bullet
-    color: red !important
+  @media screen and (min-width: 576px)
+    width: 761px
+    height: unset
 
+  @media screen and (min-width: 768px)
+    width: 1000px
+
+  @media screen and (min-width: 1024px)
+    width: 1500px
+
+  @media screen and (min-width: 1440px)
+    width: 1506px
 
 .case-studies-project-slide-container
   display: flex
   flex-direction: column
 
 .case-studies-project-slide-image
-  width: 346px
-  margin-bottom: 20px
+  width: 264px
+  margin-bottom: 8px
+
+  @media screen and (min-width: 576px)
+    width: 368px
+
+  @media screen and (min-width: 768px)
+    width: 468px
+
+.case-studies-project-slide-subtitle
+  font-weight: 600
+  font-size: 10px
+  line-height: 12px
+  color: $gray
+  margin-bottom: 2px
+
+.case-studies-project-slide-title
+  font-weight: 600
