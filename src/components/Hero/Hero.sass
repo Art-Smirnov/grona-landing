@@ -1,26 +1,74 @@
 .hero
-  height: 440px
+  &.container
+    display: flex
+    padding-top: 48px
+    padding-bottom: 80px
 
-.hero-content
-  display: flex
+    @media screen and (min-width: 576px)
+      padding-top: 72px
+
+    @media screen and (min-width: 768px)
+      padding-bottom: 160px
+
+    background-image: url('../images/ficus.svg')
+    background-repeat: no-repeat
+    background-position: 195px 65px
+    background-size: 164px
+
+    @media screen and (min-width: 576px)
+      background-size: 212px
+      background-position: 350px 45px
+
+    @media screen and (min-width: 768px)
+      background-size: 287px
+      background-position: 475px 65px
+
+    @media screen and (min-width: 1024px)
+      background-position: 600px 65px
+
+    @media screen and (min-width: 1440px)
+      background-position: 650px 55px
+
+.hero-sub-title-box
+  max-width: min-content
+
+  @media screen and (min-width: 1024px)
+    margin-top: 12px
 
 .hero-sub-title
+  display: inline-block
   font-weight: 600
-  font-size: 12px
-  line-height: 15px
-  width: 54px
-  margin-right: 70px
+  font-size: 10px
+  line-height: 12px
+  width: 47px
+  margin-right: 29px
+  margin-bottom: 90px
 
-
-.hero-content
-  background-image: url('../images/ficus.svg')
-  background-repeat: no-repeat
-  background-position: 590px
+  @media screen and (min-width: 576px)
+    margin-right: 74px
+    font-size: 12px
+    line-height: 15px
+    width: 56px
 
 .hero-title
-  margin: 12px 0 0
-  width: 547px
+  margin: 0
+  width: 254px
   font-weight: 700
-  font-size: 80px
+  font-size: 33px
   line-height: 100%
 
+  @media screen and (min-width: 576px)
+    font-size: 40px
+    width: 346px
+
+  @media screen and (min-width: 768px)
+    font-size: 64px
+    width: 438px
+
+  @media screen and (min-width: 1024px)
+    font-size: 80px
+    width: 547px
+
+
+.hero-arrow-icon
+  transform: rotate(45deg)
