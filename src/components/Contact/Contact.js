@@ -1,15 +1,17 @@
-import { useState } from 'react';
+import { useRef, useState } from 'react';
 import { TextField } from '@mui/material';
 import ArrowForwardIcon from '@mui/icons-material/ArrowForward';
 // eslint-disable-next-line import/no-named-as-default
 import ReCAPTCHA from 'react-google-recaptcha';
+import squish from '../../hepers/ClassNameHelper';
 
 import './Contact.sass';
 
 const Contact = () => {
   const [formData, setFormData] = useState({ email: '', description: '' });
   const [formErrors, setFormErrors] = useState({ email: '', description: '' });
-  const [isCaptchaVerified, setIsCaptchaVerified] = useState(false);
+  const recaptchaRef = useRef(null);
+
   const handleInputChange = (e) => {
     setFormData({
       ...formData,
@@ -19,17 +21,9 @@ const Contact = () => {
 
   const handleSendButtonClick = (e) => {
     e.preventDefault();
-
-    if (!isCaptchaVerified) {
-      alert('Please verify that you are a human!');
-      return;
-    }
-
-    if (validateForm()) {
-      alert(`Email: ${formData.email}\nDescription: ${formData.description}`);
-      setFormData({ email: '', description: '' });
-      setFormErrors({ email: '', description: '' });
-    }
+    recaptchaRef.current.execute();
+    onSubmit();
+    recaptchaRef.current.reset();
   };
 
   const validateForm = () => {
@@ -53,8 +47,12 @@ const Contact = () => {
     return isValid;
   };
 
-  const handleCaptchaChange = (value) => {
-    setIsCaptchaVerified(value);
+  const onSubmit = () => {
+    if (validateForm()) {
+      alert(`Email: ${formData.email}\nDescription: ${formData.description}`);
+      setFormData({ email: '', description: '' });
+      setFormErrors({ email: '', description: '' });
+    }
   };
 
   return (
@@ -66,10 +64,13 @@ const Contact = () => {
         <h2 className="contact-title">Get in Touch</h2>
       </div>
 
-      <form className="form">
+      <form className="form" onSubmit={handleSendButtonClick}>
         <div className="form-inputs">
           <TextField
-            className="form-input"
+            className={squish`
+              form-input
+              ${formErrors.email ? 'error' : ''}
+            `}
             label="Your email"
             variant="standard"
             id="email"
@@ -79,7 +80,10 @@ const Contact = () => {
             helperText={formErrors.email}
           />
           <TextField
-            className="form-input"
+            className={squish`
+              form-input
+              ${formErrors.email ? 'error' : ''}
+            `}
             label="Describe your idea"
             variant="standard"
             id="description"
@@ -89,13 +93,15 @@ const Contact = () => {
             helperText={formErrors.description}
           />
           <ReCAPTCHA
-            theme="dark"
+            ref={recaptchaRef}
+            size="invisible"
             sitekey="6LeIxAcTAAAAAJcZVRqyHh71UMIEGNQ_MXjiZKhI"
-            onChange={handleCaptchaChange}
+            theme="dark"
+            onChange={(token) => console.log(token)}
           />
         </div>
 
-        <button className="form-button" onClick={handleSendButtonClick}>
+        <button type="submit" className="form-button">
           <span>Send</span>
           <ArrowForwardIcon />
         </button>

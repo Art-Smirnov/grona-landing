@@ -2,7 +2,11 @@
 
 .contact
   &.container
-    margin-bottom: 40px
+    margin-bottom: 80px
+
+    @media screen and (min-width: 768px)
+      margin-bottom: 160px
+
 
 .contact-titles
   display: flex
@@ -10,28 +14,64 @@
 
 .contact-sub-title
   font-weight: 600
-  font-size: 12px
-  line-height: 15px
-  width: 74px
-  margin-right: 50px
+  font-size: 10px
+  line-height: 12px
+  width: 47px
+  margin-right: 29px
+
+  @media screen and (min-width: 576px)
+    font-size: 12px
+    line-height: 15px
+    width: 105px
+
+  @media screen and (min-width: 1440px)
+    margin-right: 58px
+
 
 .contact-title
   font-weight: 600
-  font-size: 38px
-  line-height: 47px
+  font-size: 24px
+  line-height: 30px
   margin: 0
+
+  @media screen and (min-width: 576px)
+    font-size: 32px
+    line-height: 40px
+
+  @media screen and (min-width: 768px)
+    font-size: 38px
+    line-height: 47px
 
 
 .form
   display: flex
-  margin-left: 128px
-  align-items: flex-end
-  justify-content: space-between
+  margin-left: 76px
+  flex-direction: column
+
+  @media screen and (min-width: 576px)
+    flex-direction: row
+    margin-left: 131px
+
+  @media screen and (min-width: 768px)
+    margin-left: 135px
+
+  @media screen and (min-width: 1440px)
+    margin-left: 163px
+
 
   .form-inputs
     display: flex
     flex-direction: column
-    width: 600px
+    margin-bottom: 12px
+
+    @media screen and (min-width: 576px)
+      margin-bottom: 0
+      margin-right: 16px
+      width: 469px
+
+    @media screen and (min-width: 768px)
+      margin-right: 32px
+
 
   .form-input
     &:not(:last-child)
@@ -40,28 +80,45 @@
     .MuiInputBase-root:before
       border-bottom: 1px solid $gray
 
+    &.error
+      .MuiInputBase-root:before
+        border-bottom: 1px solid $red
+
     .MuiInputBase-root:after
       border-bottom: 2px solid $white
 
     label
+      font-size: 14px
+      line-height: 17px
+      top: 14px
       color: $gray
 
+      &.MuiInputLabel-shrink
+        top: 9px
+
     input
+      padding: 15px 0 15px
       color: $white
+      font-size: 14px
+      line-height: 17px
 
     .MuiFormHelperText-root.Mui-error
-      //color: green
+      color: $red
 
 
   .form-button
     display: flex
     align-items: center
+    align-self: flex-end
     cursor: pointer
     border-radius: 6px
     border: transparent
     color: $white
     background-color: transparent
     transition: background-color 0.2s ease-in-out
+
+    @media screen and (min-width: 576px)
+      margin-bottom: 12px
 
     &:hover
       background-color: $gray
@@ -72,7 +129,3 @@
       font-size: 20px
       line-height: 20px
       margin-right: 5px
-
-
-#recaptcha_response_field
-  background: #fff !important
