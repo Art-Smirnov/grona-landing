@@ -4,8 +4,8 @@ const Team = () => {
   return (
     <div id="team" className="container team">
       <div className="team-titles">
-        <span className="team-exclamation">!</span>
-        <h2 className="team-title">Our Team</h2>
+        <span className="team-subtitle">Here we are</span>
+        <h2 className="team-title">Meet the Team</h2>
       </div>
 
       <div className="team-container">

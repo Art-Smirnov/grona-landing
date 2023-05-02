@@ -2,70 +2,140 @@
 
 .team
   &.container
-    margin-bottom: 40px
+    margin-bottom: 80px
 
 .team-titles
-  margin-bottom: 40px
+  margin-bottom: 32px
   display: flex
+  align-items: center
 
 .team-title
   font-weight: 600
-  font-size: 38px
-  line-height: 47px
+  font-size: 24px
+  line-height: 30px
   margin: 0
 
-.team-exclamation
-  font-size: 36px
-  margin-right: 120px
-  line-height: 1
+  @media screen and (min-width: 576px)
+    font-size: 32px
+    line-height: 40px
+
+.team-subtitle
+  font-weight: 600
+  font-size: 10px
+  line-height: 12px
+  margin-right: 29px
+  width: 47px
+
+  @media screen and (min-width: 576px)
+    margin-right: 61px
+    font-size: 12px
+    line-height: 15px
+    width: 70px
 
 .team-container
   display: flex
+  flex-direction: column
   justify-content: space-between
-  margin-left: 128px
+  margin-left: 75px
+
+  @media screen and (min-width: 576px)
+    max-width: 424px
+    flex-direction: row
+    margin-left: 131px
+
+  @media screen and (min-width: 768px)
+    max-width: 573px
+
+  @media screen and (min-width: 1024px)
+    max-width: 730px
 
   .border
-    height: 314px
-    width: 250px
+    height: 168px
+    width: 126px
     background: transparent
-    border-radius: 10px
     transition: border 1s
     position: relative
+
+    @media screen and (min-width: 768px)
+      height: 232px
+      width: 171px
+
+    @media screen and (min-width: 1024px)
+      height: 287px
+      width: 214px
 
   .border:hover
     border: 1px solid $white
 
   .card
-    height: 324px
-    width: 240px
-    border-radius: 10px
+    height: 174px
+    width: 131px
     transition: background 0.8s
     overflow: hidden
     background: #000
-    box-shadow: 0 70px 63px -60px #000
+    box-shadow: 0 35px 31.5px -30px #000
     display: flex
     justify-content: center
     align-items: center
     position: relative
 
+    @media screen and (min-width: 768px)
+      height: 238px
+      width: 179px
+      box-shadow: 0 42px 37.5px -35px #000
+
+    @media screen and (min-width: 1024px)
+      height: 295px
+      width: 222px
+      box-shadow: 0 49.5px 44.25px -41.5px #000
+
+    @media screen and (max-width: 575px)
+      &:not(:last-child)
+        margin-bottom: 16px
+
   .card0
     background: url("../images/Ivan.jpg") center center no-repeat
-    background-size: 250px
+    background-size: 131px
+
+    @media screen and (min-width: 768px)
+      background-size: 179px
+
+    @media screen and (min-width: 1024px)
+      background-size: 222px
 
   .card0:hover
     background: url("../images/Ivan.jpg") left center no-repeat
-    background-size: 500px
+    background-size: 260px
+
+    @media screen and (min-width: 768px)
+      background-size: 350px
+
+    @media screen and (min-width: 1024px)
+      background-size: 435px
+
 
   .card0:hover h2
     opacity: 1
 
   .card1
     background: url("../images/zhenya.jpg") center center no-repeat
-    background-size: 250px
+    background-size: 131px
+
+    @media screen and (min-width: 768px)
+      background-size: 179px
+
+    @media screen and (min-width: 1024px)
+      background-size: 222px
 
   .card1:hover
     background: url("../images/zhenya.jpg") left center no-repeat
-    background-size: 500px
+    background-size: 260px
+
+    @media screen and (min-width: 768px)
+      background-size: 350px
+
+    @media screen and (min-width: 1024px)
+      background-size: 435px
 
   .card1:hover h2
     opacity: 1
@@ -73,17 +143,34 @@
 
   .card2
     background: url("../images/artem.jpg") center center no-repeat
-    background-size: 250px
+    background-size: 131px
+
+    @media screen and (min-width: 768px)
+      background-size: 179px
+
+    @media screen and (min-width: 1024px)
+      background-size: 222px
 
   .card2:hover
     background: url("../images/artem.jpg") left center no-repeat
-    background-size: 500px
+    background-size: 260px
+
+    @media screen and (min-width: 768px)
+      background-size: 350px
+
+    @media screen and (min-width: 1024px)
+      background-size: 435px
 
   .card2:hover h2
     opacity: 1
 
   h2
     color: $white
-    margin: 20px
+    margin: 10px
+    font-size: 14px
     opacity: 0
     transition: opacity 1s
+
+    @media screen and (min-width: 1024px)
+      font-size: 18px
+
