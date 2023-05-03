@@ -1,35 +1,46 @@
+import PropTypes from 'prop-types';
+import squish from '../../hepers/ClassNameHelper';
 import useScreen from '../hooks/useScreen';
 
-const HeaderNav = () => {
+const HeaderNav = ({ isSideBar, onCloseSideBar }) => {
   const { isMobile } = useScreen(767);
 
-  if (isMobile()) {
-    return;
+  if (isMobile() && !isSideBar) {
+    return null;
   }
 
-  const handleClick = (event) => {
-    event.preventDefault();
-    const targetId = event.currentTarget.getAttribute('href');
-    const targetElement = document.querySelector(targetId);
-    targetElement.scrollIntoView({ behavior: 'smooth' });
+  const handleClick = () => {
+    if (isSideBar) {
+      onCloseSideBar();
+    }
   };
 
   return (
-    <nav className="header-nav">
-      <a href="#case-studies">
-        <span className="header-nav-item">Work</span>
+    <nav
+      className={squish`
+        header-nav 
+        ${isSideBar ? 'side-bar' : ''}
+      `}
+    >
+      <a className="header-nav-link" href="#case-studies" onClick={handleClick}>
+        <span className="header-nav-item">Cases</span>
       </a>
-      <a href="#capabilities">
-        <span className="header-nav-item">Company</span>
+      <a className="header-nav-link" href="#capabilities" onClick={handleClick}>
+        <span className="header-nav-item">Capabilities</span>
       </a>
-      <a href="#team" onClick={handleClick}>
+      <a className="header-nav-link" href="#team" onClick={handleClick}>
         <span className="header-nav-item">Team</span>
       </a>
-      <a href="#contact" onClick={handleClick}>
+      <a className="header-nav-link" href="#contact" onClick={handleClick}>
         <span className="header-nav-item">Contact</span>
       </a>
     </nav>
   );
+};
+
+HeaderNav.propTypes = {
+  isSideBar: PropTypes.bool,
+  onCloseSideBar: PropTypes.func,
 };
 
 export default HeaderNav;

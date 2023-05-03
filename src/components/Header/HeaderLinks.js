@@ -5,16 +5,23 @@ import { ReactComponent as FacebookIcon } from '../images/facebook.svg';
 import { ReactComponent as TelegramIcon } from '../images/telegram.svg';
 import { ReactComponent as EmailIcon } from '../images/email.svg';
 import useScreen from '../hooks/useScreen';
+import PropTypes from 'prop-types';
+import squish from '../../hepers/ClassNameHelper';
 
-const HeaderLinks = () => {
+const HeaderLinks = ({ isSideBar }) => {
   const { isMobile } = useScreen(575);
 
-  if (isMobile()) {
+  if (isMobile() && !isSideBar) {
     return;
   }
 
   return (
-    <div className="header-links">
+    <div
+      className={squish`
+        header-links 
+        ${isSideBar ? 'side-bar' : ''}
+      `}
+    >
       <a
         className="header-links-item"
         target="_blank"
@@ -34,7 +41,7 @@ const HeaderLinks = () => {
       <a
         className="header-links-item"
         target="_blank"
-        href="https://www.instagram.com/"
+        href="https://www.instagram.com/grona.tech/"
         rel="noreferrer"
       >
         <InstagramIcon className="header-links-icon" />
@@ -66,6 +73,10 @@ const HeaderLinks = () => {
       </a>
     </div>
   );
+};
+
+HeaderLinks.propTypes = {
+  isSideBar: PropTypes.bool,
 };
 
 export default HeaderLinks;

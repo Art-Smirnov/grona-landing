@@ -17,10 +17,33 @@
   font-size: 14px
   line-height: 17px
 
+  &.side-bar
+    display: flex
+    flex-direction: column
+    margin-left: 65px
+    margin-bottom: 273px
+
+    .header-nav-item
+      font-weight: 500
+      font-size: 18px
+      line-height: 20px
+
+    .header-nav-link
+      margin-right: 0
+      padding: 8px 16px
+      width: fit-content
+
+      &:not(:last-child)
+        margin-bottom: 9px
+
+
+.header-nav-link
+  margin-right: 16px
+
 .header-nav-item
   display: inline-block
   color: $white
-  margin-right: 16px
+
 
   &:hover
     text-decoration: underline
@@ -32,8 +55,44 @@
   @media screen and (max-width: 767px)
     margin-right: 16px
 
+  &.side-bar
+    margin: 0 auto
+
   .header-links-icon
     vertical-align: bottom
 
 .header-links-item:not(:last-child)
   margin-right: 8px
+
+.header-burger-button
+  background-color: transparent
+  border: none
+
+
+//SideBar.js
+.MuiDrawer-root
+  .MuiDrawer-paper
+    background-color: $dark
+    padding: 32px 10px
+    width: 283px
+
+
+.sidebar-close-button
+  background-color: transparent
+  border: none
+  width: fit-content
+  margin-left: auto
+  margin-bottom: 55px
+
+.side-bar-contact-us-button
+  display: flex
+  align-items: center
+  justify-content: center
+  padding: 12px 0
+  margin-bottom: 32px
+
+.side-bar-contact-us-button-title
+  font-weight: 500
+  font-size: 16px
+  line-height: 20px
+  margin-left: 8px
