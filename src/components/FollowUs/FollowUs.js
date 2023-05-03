@@ -6,9 +6,10 @@ import { ReactComponent as TelegramIcon } from '../images/telegram.svg';
 import { ReactComponent as EmailIcon } from '../images/email.svg';
 
 import './FollowUs.sass';
+
 const FollowUs = () => {
   return (
-    <div className="container">
+    <div className="follow-us container">
       <div className="follow-us-titles">
         <span className="follow-us-subtitle">Let&apos;s stay connected</span>
         <h2 className="follow-us-title">Follow us</h2>

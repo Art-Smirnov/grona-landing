@@ -1,5 +1,15 @@
 @import '../../styles/variables'
 
+.follow-us
+  &.container
+    margin-bottom: 96px
+
+    @media screen and (min-width: 576px)
+      margin-bottom: 112px
+
+    @media screen and (min-width: 768px)
+      margin-bottom: 176px
+
 .follow-us-titles
   display: flex
   align-items: center
@@ -7,32 +17,59 @@
 
 .follow-us-subtitle
   font-weight: 600
-  font-size: 12px
-  line-height: 15px
-  width: 105px
+  font-size: 10px
+  line-height: 12px
+  width: 47px
   margin-right: 29px
+
+  @media screen and (min-width: 576px)
+    font-size: 12px
+    line-height: 15px
+    width: 105px
+    margin-right: 26px
+
+  @media screen and (min-width: 1440px)
+    margin-right: 58px
+
 
 .follow-us-title
   font-weight: 600
-  font-size: 38px
-  line-height: 47px
+  font-size: 24px
+  line-height: 30px
   margin: 0
 
+  @media screen and (min-width: 576px)
+    font-size: 32px
+    line-height: 40px
+
+  @media screen and (min-width: 768px)
+    font-size: 38px
+    line-height: 47px
+
 .social-links-cards
-  display: flex
-  width: 400px
-  justify-content: space-between
-  margin-left: 200px
+  margin-left: 80px
+
+  @media screen and (max-width: 575px)
+    display: grid
+    grid-template-columns: 1fr 1fr 1fr
+    grid-gap: 16px
+    width: 173px
+
+  @media screen and (min-width: 576px)
+    display: flex
+    justify-content: space-between
+    width: 350px
+    margin-left: 131px
+
+  @media screen and (min-width: 1440px)
+    margin-left: 163px
+
 
 .social-links-card
   display: flex
   flex-direction: column
   align-items: center
   text-decoration: none
-
-  //&:not(:last-child)
-  //  margin-right: 16px
-
 
 .social-links-card-icon
   margin-bottom: 8px
