@@ -5,6 +5,7 @@ import Capabilities from './components/Capabilities';
 import Team from './components/Team';
 import Contact from './components/Contact';
 import FollowUs from './components/FollowUs';
+import Footer from './components/Footer';
 
 import './App.sass';
 
@@ -18,6 +19,7 @@ function App() {
       <Team />
       <Contact />
       <FollowUs />
+      <Footer />
     </div>
   );
 }
