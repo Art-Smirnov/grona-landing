@@ -14,17 +14,18 @@ const Capabilities = () => {
       <Accordion
         className="first"
         title="UX & product design"
-        details="Welcome to Grona.Tech! We are a team of professionals
-          specializing in web application development for e-commerce. We
-          are delighted to have you here and help bring your ideas to life.
-          Learn more about our services and past projects we have completed.
-          Thank you for choosing us!"
+        details="Our design services include web design, mobile app design, 
+        UI/UX design, responsive design, and more. We use the latest design 
+        trends and techniques to create designs that are not only visually 
+        stunning but also user-friendly and optimized for performance."
       />
 
       <Accordion
         title="Product development"
-        details="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse
-          malesuada lacus ex, sit amet blandit leo lobortis eget."
+        details="Our web development services include designing, building, 
+        and maintaining websites and web applications. Our team of experts 
+        uses the latest technologies and frameworks to ensure your website 
+        is optimized for performance and user experience."
       />
     </div>
   );
