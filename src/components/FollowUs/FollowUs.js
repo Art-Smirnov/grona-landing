@@ -17,7 +17,7 @@ const FollowUs = () => {
       <div className="social-links-cards">
         <a
           target="_blank"
-          href="https://www.linkedin.com/"
+          href="https://www.linkedin.com/company/grona-tech/"
           rel="noreferrer"
           className="social-links-card"
         >
@@ -37,7 +37,7 @@ const FollowUs = () => {
 
         <a
           target="_blank"
-          href="https://www.instagram.com/"
+          href="https://www.instagram.com/grona.tech/"
           rel="noreferrer"
           className="social-links-card"
         >

@@ -10,10 +10,22 @@ body
   background-color: $dark
   color: $white
   background-image: url('./components/images/ellipse_1.png'),
-  url('./components/images/ellipse_1.png'),
+  url('./components/images/ellipse_hero.png'),
   url('./components/images/ellipse_1.png'),
   url('./components/images/ellipse_1.png'),
   url('./components/images/ellipse_1.png'),
   url('./components/images/ellipse_1.png')
   background-repeat: no-repeat
-  background-position: left -25%, center 0, left 35% , right 60%, left 90%, 60% 120%
+  background-position: -60vw -15%, 100vw 0, -80vw 22%, -80vw 60%, 30vw 88%, 100vw 120%
+
+  @media screen and (min-width: 576px)
+    background-position: -200px -20%, 140px -4%, -300px 30%, -300px 74%, 288px 110%, 100vw 140%
+
+  @media screen and (min-width: 768px)
+    background-position: -200px -14%, 303px -2%, -300px 22%, -300px 74%, 488px 107%, 100vw 140%
+
+  @media screen and (min-width: 1024px)
+    background-position: -200px -14%, 433px -2%, -300px 22%, 650px 44%, -262px 70%, 530px 107%
+
+  @media screen and (min-width: 1440px)
+    background-position: left -14%, center -2%, left 22%, right 44%, left 70%, center 107%

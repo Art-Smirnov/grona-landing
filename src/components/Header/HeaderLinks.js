@@ -25,7 +25,7 @@ const HeaderLinks = ({ isSideBar }) => {
       <a
         className="header-links-item"
         target="_blank"
-        href="https://www.linkedin.com/"
+        href="https://www.linkedin.com/company/grona-tech/"
         rel="noreferrer"
       >
         <LinkedInIcon className="header-links-icon" />
