@@ -52,7 +52,9 @@
     line-height: 47px
 
 
-.case-studies-swiper
+
+//Slider.js
+.slider
   height: 400px
 
   .swiper-button-next,
@@ -72,12 +74,12 @@
   @media screen and (min-width: 1440px)
     width: 1506px
 
-
-.case-studies-project-slide-container
+//SwiperSlideContent.js
+.slider-slide-container
   display: flex
   flex-direction: column
 
-.case-studies-project-slide-image
+.slider-slide-image
   width: 264px
   margin-bottom: 8px
 
@@ -88,12 +90,39 @@
     width: 468px
 
 
-.case-studies-project-slide-subtitle
+.slider-slide-subtitle
   font-weight: 600
   font-size: 10px
   line-height: 12px
   color: $gray
   margin-bottom: 2px
 
-.case-studies-project-slide-title
+.slider-slide-title
   font-weight: 600
+
+
+.modal
+  box-sizing: border-box
+  position: relative
+  display: flex
+  flex-direction: column
+  align-items: center
+  top: 50%
+  left: 50%
+  transform: translate(-50%, -50%)
+  max-width: 90vw
+  max-height: 90vh
+  background-color: $white
+  overflow-y: auto
+
+.modal-close-button
+  background-color: transparent
+  border: none
+  position: absolute
+  cursor: pointer
+  right: 0
+
+  svg
+    width: 80px
+    height: 80px
+
