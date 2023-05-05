@@ -2,6 +2,7 @@ import { useState } from 'react';
 import PropTypes from 'prop-types';
 import Modal from '@mui/material/Modal';
 import { ReactComponent as CloseIcon } from '../images/close.svg';
+import { ReactComponent as SearchIcon } from '../images/search-icon.svg';
 
 const SwiperSlideContent = ({ slideCover, subtitle, title, children }) => {
   const [isOpenModal, setOpenIsModal] = useState(false);
@@ -12,12 +13,17 @@ const SwiperSlideContent = ({ slideCover, subtitle, title, children }) => {
 
   return (
     <div className="slider-slide-content">
-      <img
-        className="slider-slide-image"
-        src={slideCover}
-        alt="Project cover"
-        onClick={handleToggleModal}
-      />
+      <div onClick={handleToggleModal} className="slider-slide-image-container">
+        <img
+          className="slider-slide-image"
+          src={slideCover}
+          alt="Project cover"
+        />
+        <div className="slider-slide-overlay">
+          <SearchIcon />
+          <span>Open case</span>
+        </div>
+      </div>
       <span className="slider-slide-subtitle">{subtitle}</span>
       <span className="slider-slide-title">{title}</span>
       {isOpenModal && (
