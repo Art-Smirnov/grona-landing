@@ -2,7 +2,7 @@ import { ReactComponent as LinkedInIcon } from '../images/linkedin.svg';
 import { ReactComponent as UpWorkIcon } from '../images/up.svg';
 import { ReactComponent as InstagramIcon } from '../images/instagram.svg';
 import { ReactComponent as FacebookIcon } from '../images/facebook.svg';
-import { ReactComponent as TelegramIcon } from '../images/telegram.svg';
+import { ReactComponent as WhatsAppIcon } from '../images/whats-up.svg';
 import { ReactComponent as EmailIcon } from '../images/email.svg';
 import useScreen from '../hooks/useScreen';
 import PropTypes from 'prop-types';
@@ -33,7 +33,7 @@ const HeaderLinks = ({ isSideBar }) => {
       <a
         className="header-links-item"
         target="_blank"
-        href="https://www.upwork.com/"
+        href="https://www.upwork.com/agencies/~01885e02e837a4498e/"
         rel="noreferrer"
       >
         <UpWorkIcon className="header-links-icon" />
@@ -49,7 +49,7 @@ const HeaderLinks = ({ isSideBar }) => {
       <a
         className="header-links-item"
         target="_blank"
-        href="https://www.facebook.com/"
+        href="https://www.facebook.com/grona.tech"
         rel="noreferrer"
       >
         <FacebookIcon className="header-links-icon" />
@@ -57,16 +57,15 @@ const HeaderLinks = ({ isSideBar }) => {
       <a
         className="header-links-item"
         target="_blank"
-        href="/"
+        href="https://wa.me/message/EYJJQZZGG5CNP1"
         rel="noreferrer"
       >
-        <TelegramIcon className="header-links-icon" />
+        <WhatsAppIcon className="header-links-icon" />
       </a>
 
       <a
         className="header-links-item"
-        target="_blank"
-        href="/"
+        href="mailto:inbox@grona.tech"
         rel="noreferrer"
       >
         <EmailIcon className="header-links-icon" />

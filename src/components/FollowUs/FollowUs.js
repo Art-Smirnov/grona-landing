@@ -2,7 +2,7 @@ import { ReactComponent as LinkedInIcon } from '../images/linkedin.svg';
 import { ReactComponent as UpWorkIcon } from '../images/up.svg';
 import { ReactComponent as InstagramIcon } from '../images/instagram.svg';
 import { ReactComponent as FacebookIcon } from '../images/facebook.svg';
-import { ReactComponent as TelegramIcon } from '../images/telegram.svg';
+import { ReactComponent as WhatsAppIcon } from '../images/whats-up.svg';
 import { ReactComponent as EmailIcon } from '../images/email.svg';
 
 import './FollowUs.sass';
@@ -27,7 +27,7 @@ const FollowUs = () => {
 
         <a
           target="_blank"
-          href="https://www.upwork.com/"
+          href="https://www.upwork.com/agencies/~01885e02e837a4498e/"
           rel="noreferrer"
           className="social-links-card"
         >
@@ -47,7 +47,7 @@ const FollowUs = () => {
 
         <a
           target="_blank"
-          href="https://www.instagram.com/"
+          href="https://www.facebook.com/grona.tech"
           rel="noreferrer"
           className="social-links-card"
         >
@@ -57,17 +57,16 @@ const FollowUs = () => {
 
         <a
           target="_blank"
-          href="/"
+          href="https://wa.me/message/EYJJQZZGG5CNP1"
           rel="noreferrer"
           className="social-links-card"
         >
-          <TelegramIcon className="social-links-card-icon" />
-          <span className="social-links-card-title">Telegram</span>
+          <WhatsAppIcon className="social-links-card-icon" />
+          <span className="social-links-card-title">WhatsApp</span>
         </a>
 
         <a
-          target="_blank"
-          href="/"
+          href="mailto:inbox@grona.tech"
           rel="noreferrer"
           className="social-links-card"
         >
