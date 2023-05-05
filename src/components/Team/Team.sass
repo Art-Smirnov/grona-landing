@@ -65,42 +65,61 @@
   @media screen and (min-width: 1440px)
     margin-left: 163px
 
-  .border
-    height: 168px
-    width: 126px
-    background: transparent
-    transition: border 1s
-    position: relative
+  .card0
+    background: url("../images/Ivan.jpg") center center no-repeat
 
-    @media screen and (min-width: 768px)
-      height: 232px
-      width: 171px
+  .card0:hover
+    background: url("../images/Ivan.jpg") left center no-repeat
 
-    @media screen and (min-width: 1024px)
-      height: 287px
-      width: 214px
+  .card1
+    background: url("../images/zhenya.jpg") center center no-repeat
 
-  .border:hover
-    border: 1px solid $white
+  .card1:hover
+    background: url("../images/zhenya.jpg") left center no-repeat
+
+  .card2
+    background: url("../images/artem.jpg") center center no-repeat
+
+  .card2:hover
+    background: url("../images/artem.jpg") left center no-repeat
 
   .card
+    position: relative
+    background-size: 131px
+    box-sizing: border-box
+    padding: 16px 8px
     height: 174px
     width: 131px
     transition: background 0.8s
     overflow: hidden
-    background: #000
     box-shadow: 0 35px 31.5px -30px #000
     display: flex
-    justify-content: center
-    align-items: center
-    position: relative
+    flex-direction: column
+    align-items: flex-start
+
+    &::before
+      content: ""
+      position: absolute
+      top: 0
+      left: 0
+      width: 100%
+      height: 100%
+      background-image: $gradient
+      z-index: 1
+      opacity: 0
+      transition: opacity $transition
+
+    &:hover::before
+      opacity: 1
 
     @media screen and (min-width: 768px)
+      background-size: 179px
       height: 238px
       width: 179px
       box-shadow: 0 42px 37.5px -35px #000
 
     @media screen and (min-width: 1024px)
+      background-size: 222px
       height: 295px
       width: 222px
       box-shadow: 0 49.5px 44.25px -41.5px #000
@@ -109,83 +128,34 @@
       &:not(:last-child)
         margin-bottom: 16px
 
-  .card0
-    background: url("../images/Ivan.jpg") center center no-repeat
-    background-size: 131px
 
-    @media screen and (min-width: 768px)
-      background-size: 179px
+    &:hover
+      background-size: 260px
 
-    @media screen and (min-width: 1024px)
-      background-size: 222px
+      @media screen and (min-width: 768px)
+        background-size: 350px
 
-  .card0:hover
-    background: url("../images/Ivan.jpg") left center no-repeat
-    background-size: 260px
+      @media screen and (min-width: 1024px)
+        background-size: 435px
 
-    @media screen and (min-width: 768px)
-      background-size: 350px
+      h2,
+      span
+        opacity: 1
+        z-index: 2
 
-    @media screen and (min-width: 1024px)
-      background-size: 435px
-
-
-  .card0:hover h2
-    opacity: 1
-
-  .card1
-    background: url("../images/zhenya.jpg") center center no-repeat
-    background-size: 131px
-
-    @media screen and (min-width: 768px)
-      background-size: 179px
-
-    @media screen and (min-width: 1024px)
-      background-size: 222px
-
-  .card1:hover
-    background: url("../images/zhenya.jpg") left center no-repeat
-    background-size: 260px
-
-    @media screen and (min-width: 768px)
-      background-size: 350px
-
-    @media screen and (min-width: 1024px)
-      background-size: 435px
-
-  .card1:hover h2
-    opacity: 1
-
-
-  .card2
-    background: url("../images/artem.jpg") center center no-repeat
-    background-size: 131px
-
-    @media screen and (min-width: 768px)
-      background-size: 179px
-
-    @media screen and (min-width: 1024px)
-      background-size: 222px
-
-  .card2:hover
-    background: url("../images/artem.jpg") left center no-repeat
-    background-size: 260px
-
-    @media screen and (min-width: 768px)
-      background-size: 350px
-
-    @media screen and (min-width: 1024px)
-      background-size: 435px
-
-  .card2:hover h2
-    opacity: 1
 
   h2
     color: $white
-    margin: 10px
-    font-size: 14px
+    margin: 0 0 16px
+    font-weight: 600
+    font-size: 16px
+    line-height: 20px
     opacity: 0
-    transition: opacity 1s
+    transition: opacity $cardTransition
 
-    @media screen and (min-width: 1024px)
-      font-size: 18px
+  span
+    font-size: 12px
+    line-height: 15px
+    color: $green
+    opacity: 0
+    transition: opacity $cardTransition

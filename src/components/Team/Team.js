@@ -10,21 +10,18 @@ const Team = () => {
 
       <div className="team-container">
         <div className="card card0">
-          <div className="border">
-            <h2>Anisimov Ivan</h2>
-          </div>
+          <h2>Anisimov Ivan</h2>
+          <span>CEO</span>
         </div>
 
         <div className="card card1">
-          <div className="border">
-            <h2>Evgeniy Kaieta</h2>
-          </div>
+          <h2>Evgeniy Kaieta</h2>
+          <span>Back-End Developer</span>
         </div>
 
         <div className="card card2">
-          <div className="border">
-            <h2>Smirnov Artem</h2>
-          </div>
+          <h2>Smirnov Artem</h2>
+          <span>Front-End Developer</span>
         </div>
       </div>
     </div>
