@@ -74,6 +74,7 @@
   @media screen and (min-width: 1440px)
     width: 1506px
 
+
 //SwiperSlideContent.js
 .slider-slide-content
   display: flex
@@ -81,6 +82,8 @@
 
 .slider-slide-image-container
   position: relative
+  cursor: pointer
+
 
   .slider-slide-overlay
     display: flex
@@ -111,7 +114,6 @@
     z-index: 1
     opacity: 0
     transition: opacity $transition
-    cursor: pointer
 
   &:hover::before
     opacity: 1
@@ -169,4 +171,9 @@
   svg
     width: 80px
     height: 80px
+    stroke: $white
+    transition: stroke $transition
 
+  &:hover
+    svg
+      stroke: $green
