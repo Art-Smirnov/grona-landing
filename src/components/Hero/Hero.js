@@ -11,7 +11,7 @@ const Hero = () => {
         </span>
         <ArrowIcon className="hero-arrow-icon" />
       </div>
-      <h1 className="hero-title">Design. Development. Knowledge.</h1>
+      <h1 className="hero-title">Design. Development. Advertisement.</h1>
     </div>
   );
 };

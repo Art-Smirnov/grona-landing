@@ -7,7 +7,7 @@ import squish from '../../../hepers/ClassNameHelper';
 
 import './Accordion.sass';
 
-const Accordion = ({ title, details, className }) => {
+const Accordion = ({ title, className, children }) => {
   return (
     <MuiAccordion
       className={squish`
@@ -25,16 +25,16 @@ const Accordion = ({ title, details, className }) => {
         <span className="accordion-title">{title}</span>
       </AccordionSummary>
       <AccordionDetails>
-        <span className="accordion-details">{details}</span>
+        <div className="accordion-details">{children}</div>
       </AccordionDetails>
     </MuiAccordion>
   );
 };
 
 Accordion.propTypes = {
-  details: PropTypes.string.isRequired,
   title: PropTypes.string.isRequired,
   className: PropTypes.string,
+  children: PropTypes.node.isRequired,
 };
 
 export default Accordion;
