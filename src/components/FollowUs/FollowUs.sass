@@ -71,11 +71,25 @@
   align-items: center
   text-decoration: none
 
+  &:hover
+    .social-links-card-title
+      color: $green
+
+    .social-links-card-icon
+      path
+        fill: $green
+
+
 .social-links-card-icon
   margin-bottom: 8px
+
+  path
+    transition: fill $transition
+
 
 .social-links-card-title
   width: fit-content
   font-size: 10px
   line-height: 12px
   color: $gray
+  transition: color $transition

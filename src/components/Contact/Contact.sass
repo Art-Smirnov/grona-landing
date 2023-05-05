@@ -120,17 +120,22 @@
     border: transparent
     color: $white
     background-color: transparent
-    transition: background-color 0.2s ease-in-out
+    transition: padding-right $transition
 
     @media screen and (min-width: 576px)
       margin-bottom: 12px
 
     &:hover
-      background-color: $gray
+      padding-right: 0
+
+      span
+        margin-right: 10px
+
 
     span
       padding: 8px
       font-weight: 600
       font-size: 20px
       line-height: 20px
-      margin-right: 5px
+      margin-right: 4px
+      transition: margin-right $transition

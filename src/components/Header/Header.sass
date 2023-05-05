@@ -43,10 +43,10 @@
 .header-nav-item
   display: inline-block
   color: $white
-
+  transition: color $transition
 
   &:hover
-    text-decoration: underline
+    color: $green
 
 
 .header-links
@@ -60,6 +60,14 @@
 
   .header-links-icon
     vertical-align: bottom
+
+    path
+      transition: fill $transition
+
+    &:hover
+      path
+        fill: $green
+
 
 .header-links-item:not(:last-child)
   margin-right: 8px

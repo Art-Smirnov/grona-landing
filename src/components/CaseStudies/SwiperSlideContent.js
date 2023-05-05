@@ -11,7 +11,7 @@ const SwiperSlideContent = ({ slideCover, subtitle, title, children }) => {
   };
 
   return (
-    <div className="slider-slide-container">
+    <div className="slider-slide-content">
       <img
         className="slider-slide-image"
         src={slideCover}
