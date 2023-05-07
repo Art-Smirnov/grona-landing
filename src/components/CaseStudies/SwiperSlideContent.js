@@ -28,6 +28,7 @@ const SwiperSlideContent = ({ slideCover, subtitle, title, children }) => {
       <span className="slider-slide-title">{title}</span>
       {isOpenModal && (
         <Modal
+          className="container container__modal"
           open
           onClose={handleToggleModal}
           aria-labelledby="modal-modal-title"

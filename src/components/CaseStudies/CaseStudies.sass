@@ -146,6 +146,11 @@
 .slider-slide-title
   font-weight: 600
 
+.container__modal
+  &.container
+    @media screen and (min-width: 768px)
+      max-width: 1400px
+
 
 .modal
   box-sizing: border-box
@@ -156,15 +161,18 @@
   top: 50%
   left: 50%
   transform: translate(-50%, -50%)
-  max-width: 90vw
+  max-width: 1400px
   max-height: 90vh
   background-color: $white
   overflow-y: auto
 
+  img
+    width: 100%
+
 .modal-close-button
   background-color: transparent
   border: none
-  position: absolute
+  position: fixed
   cursor: pointer
   right: 0
 
@@ -173,6 +181,10 @@
     height: 80px
     stroke: $white
     transition: stroke $transition
+
+    @media screen and (max-width: 1023px)
+      width: 40px
+      height: 40px
 
   &:hover
     svg
