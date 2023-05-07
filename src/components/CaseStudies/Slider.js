@@ -7,7 +7,7 @@ import projectCover from '../images/project-cover.png';
 const Slider = () => {
   const { isMobile, screenWidth } = useScreen(575);
   const isVertical = isMobile() ? 'vertical' : 'horizontal';
-  const isThreePreviews = screenWidth >= 1024;
+  const isThreePreviews = screenWidth >= 1240;
   return (
     <Swiper
       className="slider"
