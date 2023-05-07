@@ -34,7 +34,33 @@ const Slider = () => {
           <img src={projectCover} alt="Project cover" />
         </SwiperSlideContent>
       </SwiperSlide>
-
+      <SwiperSlide className="slider-slide">
+        <SwiperSlideContent
+          slideCover={projectCover}
+          subtitle="UX/UI design"
+          title="Polestar"
+        >
+          <img src={projectCover} alt="Project cover" />
+        </SwiperSlideContent>
+      </SwiperSlide>
+      <SwiperSlide className="slider-slide">
+        <SwiperSlideContent
+          slideCover={projectCover}
+          subtitle="UX/UI design"
+          title="Polestar"
+        >
+          <img src={projectCover} alt="Project cover" />
+        </SwiperSlideContent>
+      </SwiperSlide>
+      <SwiperSlide className="slider-slide">
+        <SwiperSlideContent
+          slideCover={projectCover}
+          subtitle="UX/UI design"
+          title="Polestar"
+        >
+          <img src={projectCover} alt="Project cover" />
+        </SwiperSlideContent>
+      </SwiperSlide>
       <SwiperSlide className="slider-slide">
         <SwiperSlideContent
           slideCover={projectCover}
@@ -45,35 +71,7 @@ const Slider = () => {
         </SwiperSlideContent>
       </SwiperSlide>
 
-      <SwiperSlide className="slider-slide">
-        <SwiperSlideContent
-          slideCover={projectCover}
-          subtitle="UX/UI design"
-          title="Polestar"
-        >
-          <img src={projectCover} alt="Project cover" />
-        </SwiperSlideContent>
-      </SwiperSlide>
-
-      <SwiperSlide className="slider-slide">
-        <SwiperSlideContent
-          slideCover={projectCover}
-          subtitle="UX/UI design"
-          title="Polestar"
-        >
-          <img src={projectCover} alt="Project cover" />
-        </SwiperSlideContent>
-      </SwiperSlide>
-
-      <SwiperSlide className="slider-slide">
-        <SwiperSlideContent
-          slideCover={projectCover}
-          subtitle="UX/UI design"
-          title="Polestar"
-        >
-          <img src={projectCover} alt="Project cover" />
-        </SwiperSlideContent>
-      </SwiperSlide>
+      {!isMobile() && <SwiperSlide></SwiperSlide>}
     </Swiper>
   );
 };
