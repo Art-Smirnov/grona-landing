@@ -99,7 +99,7 @@
       color: $gray
 
       &.MuiInputLabel-shrink
-        top: 9px
+        top: 6px
 
     input
       padding: 15px 0 15px
@@ -107,7 +107,15 @@
       font-size: 14px
       line-height: 17px
 
-      //&:-internal-autofill-selected
+      &:-webkit-autofill,
+      &:-webkit-autofill:hover,
+      &:-webkit-autofill:focus,
+      &:-webkit-autofill:active
+        -webkit-box-shadow: 0 0 0 30px $gray inset !important
+
+      &:-webkit-autofill
+        -webkit-padding-start: 10px
+        -webkit-text-fill-color: $dark !important
 
 
     .MuiFormHelperText-root.Mui-error
