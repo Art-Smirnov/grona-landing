@@ -1,0 +1,47 @@
+import taskyImage1 from '../images/caseTasky/1.jpg';
+import taskyImage2 from '../images/caseTasky/2.jpg';
+import taskyImage3 from '../images/caseTasky/3.jpg';
+import taskyImage4 from '../images/caseTasky/4.jpg';
+import taskyImage5 from '../images/caseTasky/5.jpg';
+import taskyImage6 from '../images/caseTasky/6.jpg';
+import taskyImage7 from '../images/caseTasky/7.jpg';
+import taskyImage8 from '../images/caseTasky/8.jpg';
+import taskyImage9 from '../images/caseTasky/9.jpg';
+import taskyImage10 from '../images/caseTasky/10.jpg';
+import taskyImage11 from '../images/caseTasky/11.jpg';
+import taskyImage12 from '../images/caseTasky/12.jpg';
+import taskyImage13 from '../images/caseTasky/13.jpg';
+import taskyImage14 from '../images/caseTasky/14.jpg';
+import taskyImage15 from '../images/caseTasky/15.jpg';
+import taskyImage16 from '../images/caseTasky/16.jpg';
+import taskyImage17 from '../images/caseTasky/17.jpg';
+import taskyImage18 from '../images/caseTasky/18.jpg';
+import taskyImage19 from '../images/caseTasky/19.jpg';
+import taskyImage20 from '../images/caseTasky/20.jpg';
+import taskyImage21 from '../images/caseTasky/21.jpg';
+import taskyImage22 from '../images/caseTasky/22.jpg';
+
+export const TASKY_IMAGES = [
+  { src: taskyImage1 },
+  { src: taskyImage2 },
+  { src: taskyImage3 },
+  { src: taskyImage4 },
+  { src: taskyImage5 },
+  { src: taskyImage6 },
+  { src: taskyImage7 },
+  { src: taskyImage8 },
+  { src: taskyImage9 },
+  { src: taskyImage10 },
+  { src: taskyImage11 },
+  { src: taskyImage12 },
+  { src: taskyImage13 },
+  { src: taskyImage14 },
+  { src: taskyImage15 },
+  { src: taskyImage16 },
+  { src: taskyImage17 },
+  { src: taskyImage18 },
+  { src: taskyImage19 },
+  { src: taskyImage20 },
+  { src: taskyImage21 },
+  { src: taskyImage22 },
+];
