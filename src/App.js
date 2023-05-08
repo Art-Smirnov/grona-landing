@@ -3,11 +3,11 @@ import Hero from './components/Hero';
 import CaseStudies from './components/CaseStudies';
 import Capabilities from './components/Capabilities';
 import Team from './components/Team';
-import Contact from './components/Contact';
 import FollowUs from './components/FollowUs';
 import Footer from './components/Footer';
 
 import './App.sass';
+import Contact from './components/Contact/xContact';
 
 function App() {
   return (
