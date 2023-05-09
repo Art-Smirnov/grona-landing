@@ -12,10 +12,14 @@ const SideBar = ({ onClose }) => {
         <CloseIcon />
       </button>
       <HeaderNav onCloseSideBar={onClose} isSideBar />
-      <button className="side-bar-contact-us-button">
+      <a
+        href="#contact"
+        className="side-bar-contact-us-button"
+        onClick={onClose}
+      >
         <ArrowOutwardIcon />
         <span className="side-bar-contact-us-button-title">Contact Us</span>
-      </button>
+      </a>
       <HeaderLinks isSideBar />
     </Drawer>
   );
