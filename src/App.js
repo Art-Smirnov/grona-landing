@@ -4,10 +4,10 @@ import CaseStudies from './components/CaseStudies';
 import Capabilities from './components/Capabilities';
 import Team from './components/Team';
 import FollowUs from './components/FollowUs';
+import Contact from './components/Contact';
 import Footer from './components/Footer';
 
 import './App.sass';
-import Contact from './components/Contact/xContact';
 
 function App() {
   return (

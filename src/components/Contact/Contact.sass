@@ -133,9 +133,6 @@
     background-color: transparent
     transition: padding-right $transition
 
-    @media screen and (min-width: 576px)
-      margin-bottom: 12px
-
     &:hover
       padding-right: 0
 
@@ -150,3 +147,59 @@
       line-height: 20px
       margin-right: 4px
       transition: margin-right $transition
+
+
+.email-status-banner
+  margin-left: 75px
+  width: 303px
+  text-align: center
+
+  @media screen and (min-width: 576px)
+    margin-left: 131px
+
+  @media screen and (min-width: 1440px)
+    margin-left: 163px
+
+
+  h3
+    margin: 18px 0 12px
+    font-size: 18px
+
+  span
+    font-weight: 500
+    font-size: 14px
+    line-height: 140%
+
+  button
+    padding: 8px 8px 8px 16px
+    margin: 12px auto 0
+    display: flex
+    align-items: center
+    background-color: transparent
+    border: transparent
+    color: $white
+    cursor: pointer
+
+    .refresh-icon
+      transition: transform $transition
+
+      path
+        transition: fill $transition
+
+
+    &:hover
+      .refresh-icon
+        transform: rotate(360deg)
+
+        path
+          fill: $green
+
+      span
+        color: $green
+
+    span
+      margin-right: 8px
+      font-weight: 600
+      font-size: 16px
+      line-height: 20px
+      transition: color $transition
