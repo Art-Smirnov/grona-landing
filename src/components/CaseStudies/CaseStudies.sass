@@ -156,12 +156,15 @@
 .modal
   box-sizing: border-box
   position: relative
-  top: 50%
+  top: 45%
   left: 50%
   transform: translate(-50%, -50%)
   height: 90vh
   background-color: $white
   overflow-y: auto
+
+  @media screen and (min-width: 576px)
+    top: 50%
 
   img
     width: 100%
@@ -170,10 +173,16 @@
 .modal-close-button
   background-color: transparent
   border: none
-  padding: 0
-  position: fixed
+  margin-left: auto
   cursor: pointer
-  right: 0
+  display: block
+  padding: 10px 0 0
+
+  @media screen and (min-width: 576px)
+    position: fixed
+    right: 0
+    padding-top: 0
+
 
   svg
     width: 80px
