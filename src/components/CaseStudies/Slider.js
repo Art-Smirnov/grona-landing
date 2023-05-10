@@ -2,15 +2,16 @@ import { Swiper, SwiperSlide } from 'swiper/react';
 import { Mousewheel, Navigation } from 'swiper';
 import useScreen from '../hooks/useScreen';
 import SwiperSlideContent from './SwiperSlideContent';
-import projectCover from '../images/project-cover.png';
-import taskyCover from '../images/caseTasky/tasky-cover.png';
+import taskyCoverHorizontal from '../images/caseTasky/taskyCoverHorizontal.png';
+import taskyCoverVertical from '../images/caseTasky/taskyCoverVertical.png';
 import { TASKY_IMAGES } from '../constants/casesImages';
 import LoadableImage from '../shared/LoadableImage';
 
 const Slider = () => {
   const { isMobile, screenWidth } = useScreen(575);
-  const isVertical = isMobile() ? 'vertical' : 'horizontal';
-  const isThreePreviews = screenWidth >= 1240;
+  const isThreePreviews = screenWidth >= 1240 || screenWidth < 576;
+  const taskyCover = isMobile() ? taskyCoverVertical : taskyCoverHorizontal;
+
   return (
     <Swiper
       className="slider"
@@ -20,7 +21,6 @@ const Slider = () => {
       // navigation
       mousewheel={true}
       // grabCursor={true}
-      direction={isVertical}
       // onSwiper={(swiper) => console.log(swiper)}
       // onSlideChange={() => console.log('slide change')}
     >
@@ -38,42 +38,43 @@ const Slider = () => {
 
       <SwiperSlide className="slider-slide">
         <SwiperSlideContent
-          slideCover={projectCover}
+          slideCover={taskyCover}
           subtitle="UX/UI design"
           title="Polestar"
         >
-          <img src={projectCover} alt="Project cover" />
+          <img src={taskyCoverHorizontal} alt="Project cover" />
         </SwiperSlideContent>
       </SwiperSlide>
       <SwiperSlide className="slider-slide">
         <SwiperSlideContent
-          slideCover={projectCover}
+          slideCover={taskyCover}
           subtitle="UX/UI design"
           title="Polestar"
         >
-          <img src={projectCover} alt="Project cover" />
+          <img src={taskyCoverHorizontal} alt="Project cover" />
         </SwiperSlideContent>
       </SwiperSlide>
       <SwiperSlide className="slider-slide">
         <SwiperSlideContent
-          slideCover={projectCover}
+          slideCover={taskyCover}
           subtitle="UX/UI design"
           title="Polestar"
         >
-          <img src={projectCover} alt="Project cover" />
+          <img src={taskyCoverHorizontal} alt="Project cover" />
         </SwiperSlideContent>
       </SwiperSlide>
       <SwiperSlide className="slider-slide">
         <SwiperSlideContent
-          slideCover={projectCover}
+          slideCover={taskyCover}
           subtitle="UX/UI design"
           title="Polestar"
         >
-          <img src={projectCover} alt="Project cover" />
+          <img src={taskyCoverHorizontal} alt="Project cover" />
         </SwiperSlideContent>
       </SwiperSlide>
 
-      {!isMobile() && <SwiperSlide></SwiperSlide>}
+      <SwiperSlide></SwiperSlide>
+      {isMobile() && <SwiperSlide></SwiperSlide>}
     </Swiper>
   );
 };
