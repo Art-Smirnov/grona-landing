@@ -21,7 +21,7 @@
     display: flex
     flex-direction: column
     margin-left: 65px
-    margin-bottom: 273px
+    margin-bottom: auto
 
     .header-nav-item
       font-weight: 500
@@ -81,9 +81,11 @@
 //SideBar.js
 .MuiDrawer-root
   .MuiDrawer-paper
+    box-sizing: border-box
     background-color: $dark
-    padding: 32px 10px
+    padding: 32px 10px 134px
     width: 283px
+    height: 100vh
 
 
 .sidebar-close-button
@@ -107,6 +109,7 @@
   align-items: center
   justify-content: center
   padding: 12px 0
+  margin-top: 32px
   margin-bottom: 32px
   color: $dark
   text-decoration: none
