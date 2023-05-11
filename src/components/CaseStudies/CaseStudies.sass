@@ -55,7 +55,7 @@
 
 //Slider.js
 .slider
-  height: 276px
+  height: 318px
   width: 637px
 
   .swiper-button-next,
@@ -84,6 +84,13 @@
 .slider-slide-image-container
   position: relative
   cursor: pointer
+  margin-bottom: 8px
+
+  @media screen and (min-width: 576px)
+    margin-bottom: 10px
+
+  @media screen and (min-width: 768px)
+    margin-bottom: 12px
 
 
   .slider-slide-overlay
@@ -102,6 +109,11 @@
     span
       margin-left: 11px
       font-weight: 600
+
+      @media screen and (max-width: 575px)
+        margin-left: 8px
+        font-size: 14px
+
 
 
   &::before

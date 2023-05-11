@@ -4,13 +4,16 @@ import useScreen from '../hooks/useScreen';
 import SwiperSlideContent from './SwiperSlideContent';
 import taskyCoverHorizontal from '../images/caseTasky/taskyCoverHorizontal.png';
 import taskyCoverVertical from '../images/caseTasky/taskyCoverVertical.png';
-import { TASKY_IMAGES } from '../constants/casesImages';
+import kramCoverHorizontal from '../images/caseKram/kramCoverHorizontal.png';
+import kramCoverVertical from '../images/caseKram/kramCoverVertical.png';
+import { KRAM_IMAGES, TASKY_IMAGES } from '../constants/casesImages';
 import LoadableImage from '../shared/LoadableImage';
 
 const Slider = () => {
   const { isMobile, screenWidth } = useScreen(575);
   const isThreePreviews = screenWidth >= 1240 || screenWidth < 576;
   const taskyCover = isMobile() ? taskyCoverVertical : taskyCoverHorizontal;
+  const kramCover = isMobile() ? kramCoverVertical : kramCoverHorizontal;
 
   return (
     <Swiper
@@ -38,38 +41,13 @@ const Slider = () => {
 
       <SwiperSlide className="slider-slide">
         <SwiperSlideContent
-          slideCover={taskyCover}
+          slideCover={kramCover}
           subtitle="UX/UI design"
           title="Polestar"
         >
-          <img src={taskyCoverHorizontal} alt="Project cover" />
-        </SwiperSlideContent>
-      </SwiperSlide>
-      <SwiperSlide className="slider-slide">
-        <SwiperSlideContent
-          slideCover={taskyCover}
-          subtitle="UX/UI design"
-          title="Polestar"
-        >
-          <img src={taskyCoverHorizontal} alt="Project cover" />
-        </SwiperSlideContent>
-      </SwiperSlide>
-      <SwiperSlide className="slider-slide">
-        <SwiperSlideContent
-          slideCover={taskyCover}
-          subtitle="UX/UI design"
-          title="Polestar"
-        >
-          <img src={taskyCoverHorizontal} alt="Project cover" />
-        </SwiperSlideContent>
-      </SwiperSlide>
-      <SwiperSlide className="slider-slide">
-        <SwiperSlideContent
-          slideCover={taskyCover}
-          subtitle="UX/UI design"
-          title="Polestar"
-        >
-          <img src={taskyCoverHorizontal} alt="Project cover" />
+          {KRAM_IMAGES.map(({ src }) => {
+            return <LoadableImage key={src} src={src} alt="Project page" />;
+          })}
         </SwiperSlideContent>
       </SwiperSlide>
 

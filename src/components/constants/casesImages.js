@@ -21,6 +21,26 @@ import taskyImage20 from '../images/caseTasky/20.jpg';
 import taskyImage21 from '../images/caseTasky/21.jpg';
 import taskyImage22 from '../images/caseTasky/22.jpg';
 
+import kramImage1 from '../images/caseKram/1.jpg';
+import kramImage2 from '../images/caseKram/2.jpg';
+import kramImage3 from '../images/caseKram/3.jpg';
+import kramImage4 from '../images/caseKram/4.jpg';
+import kramImage5 from '../images/caseKram/5.jpg';
+import kramImage6 from '../images/caseKram/6.jpg';
+import kramImage7 from '../images/caseKram/7.jpg';
+import kramImage8 from '../images/caseKram/8.jpg';
+import kramImage9 from '../images/caseKram/9.jpg';
+import kramImage10 from '../images/caseKram/10.jpg';
+import kramImage11 from '../images/caseKram/11.jpg';
+import kramImage12 from '../images/caseKram/12.jpg';
+import kramImage13 from '../images/caseKram/13.jpg';
+import kramImage14 from '../images/caseKram/14.jpg';
+import kramImage15 from '../images/caseKram/15.jpg';
+import kramImage16 from '../images/caseKram/16.jpg';
+import kramImage17 from '../images/caseKram/17.jpg';
+import kramImage18 from '../images/caseKram/18.jpg';
+import kramImage19 from '../images/caseKram/19.jpg';
+
 export const TASKY_IMAGES = [
   { src: taskyImage1 },
   { src: taskyImage2 },
@@ -44,4 +64,26 @@ export const TASKY_IMAGES = [
   { src: taskyImage20 },
   { src: taskyImage21 },
   { src: taskyImage22 },
+];
+
+export const KRAM_IMAGES = [
+  { src: kramImage1 },
+  { src: kramImage2 },
+  { src: kramImage3 },
+  { src: kramImage4 },
+  { src: kramImage5 },
+  { src: kramImage6 },
+  { src: kramImage7 },
+  { src: kramImage8 },
+  { src: kramImage9 },
+  { src: kramImage10 },
+  { src: kramImage11 },
+  { src: kramImage12 },
+  { src: kramImage13 },
+  { src: kramImage14 },
+  { src: kramImage15 },
+  { src: kramImage16 },
+  { src: kramImage17 },
+  { src: kramImage18 },
+  { src: kramImage19 },
 ];
