@@ -187,13 +187,13 @@ const Form = () => {
           error={!!formErrors.description}
           helperText={formErrors.description}
         />
-        <small className={'recaptcha'}>
+        <span className="form-inputs-recaptcha">
           This site is protected by reCAPTCHA and the Google &nbsp;
-          <a href="https://policies.google.com/privacy">Privacy Policy</a> and
-          &nbsp;
-          <a href="https://policies.google.com/terms">Terms of Service</a>{' '}
-          apply.
-        </small>
+          <a href="https://policies.google.com/privacy">Privacy Policy</a>
+          &nbsp;and&nbsp;
+          <a href="https://policies.google.com/terms">Terms of Service</a>
+          &nbsp;apply.
+        </span>
       </div>
       <ReCAPTCHA ref={refCaptcha} sitekey={recapKey} size="invisible" />
       <button type="submit" className="form-button">
