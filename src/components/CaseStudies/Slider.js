@@ -42,8 +42,8 @@ const Slider = () => {
       <SwiperSlide className="slider-slide">
         <SwiperSlideContent
           slideCover={kramCover}
-          subtitle="UX/UI design"
-          title="Polestar"
+          subtitle="Design | Development | Testing"
+          title="Kram"
         >
           {KRAM_IMAGES.map(({ src }) => {
             return <LoadableImage key={src} src={src} alt="Project page" />;
