@@ -41,6 +41,24 @@ import kramImage17 from '../images/caseKram/17.jpg';
 import kramImage18 from '../images/caseKram/18.jpg';
 import kramImage19 from '../images/caseKram/19.jpg';
 
+import bettingImage1 from '../images/caseBetting/1.jpg';
+import bettingImage2 from '../images/caseBetting/2.jpg';
+import bettingImage3 from '../images/caseBetting/3.jpg';
+import bettingImage4 from '../images/caseBetting/4.jpg';
+import bettingImage5 from '../images/caseBetting/5.jpg';
+import bettingImage6 from '../images/caseBetting/6.jpg';
+import bettingImage7 from '../images/caseBetting/7.jpg';
+import bettingImage8 from '../images/caseBetting/8.jpg';
+import bettingImage9 from '../images/caseBetting/9.jpg';
+import bettingImage10 from '../images/caseBetting/10.jpg';
+import bettingImage11 from '../images/caseBetting/11.jpg';
+import bettingImage12 from '../images/caseBetting/12.jpg';
+import bettingImage13 from '../images/caseBetting/13.jpg';
+import bettingImage14 from '../images/caseBetting/14.jpg';
+import bettingImage15 from '../images/caseBetting/15.jpg';
+import bettingImage16 from '../images/caseBetting/16.jpg';
+import bettingImage17 from '../images/caseBetting/17.jpg';
+
 export const TASKY_IMAGES = [
   { src: taskyImage1 },
   { src: taskyImage2 },
@@ -86,4 +104,24 @@ export const KRAM_IMAGES = [
   { src: kramImage17 },
   { src: kramImage18 },
   { src: kramImage19 },
+];
+
+export const BETTING_IMAGES = [
+  { src: bettingImage1 },
+  { src: bettingImage2 },
+  { src: bettingImage3 },
+  { src: bettingImage4 },
+  { src: bettingImage5 },
+  { src: bettingImage6 },
+  { src: bettingImage7 },
+  { src: bettingImage8 },
+  { src: bettingImage9 },
+  { src: bettingImage10 },
+  { src: bettingImage11 },
+  { src: bettingImage12 },
+  { src: bettingImage13 },
+  { src: bettingImage14 },
+  { src: bettingImage15 },
+  { src: bettingImage16 },
+  { src: bettingImage17 },
 ];

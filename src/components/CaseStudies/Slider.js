@@ -6,7 +6,14 @@ import taskyCoverHorizontal from '../images/caseTasky/taskyCoverHorizontal.png';
 import taskyCoverVertical from '../images/caseTasky/taskyCoverVertical.png';
 import kramCoverHorizontal from '../images/caseKram/kramCoverHorizontal.png';
 import kramCoverVertical from '../images/caseKram/kramCoverVertical.png';
-import { KRAM_IMAGES, TASKY_IMAGES } from '../constants/casesImages';
+import bettingCoverHorizontal from '../images/caseBetting/bettingCoverHorizontal.png';
+import bettingCoverVertical from '../images/caseBetting/bettingCoverVertical.png';
+
+import {
+  BETTING_IMAGES,
+  KRAM_IMAGES,
+  TASKY_IMAGES,
+} from '../constants/casesImages';
 import LoadableImage from '../shared/LoadableImage';
 
 const Slider = () => {
@@ -14,6 +21,9 @@ const Slider = () => {
   const isThreePreviews = screenWidth >= 1240 || screenWidth < 576;
   const taskyCover = isMobile() ? taskyCoverVertical : taskyCoverHorizontal;
   const kramCover = isMobile() ? kramCoverVertical : kramCoverHorizontal;
+  const bettingCover = isMobile()
+    ? bettingCoverVertical
+    : bettingCoverHorizontal;
 
   return (
     <Swiper
@@ -29,6 +39,18 @@ const Slider = () => {
     >
       <SwiperSlide className="slider-slide">
         <SwiperSlideContent
+          slideCover={kramCover}
+          subtitle="Design | Development | Testing"
+          title="Kram"
+        >
+          {KRAM_IMAGES.map(({ src }) => {
+            return <LoadableImage key={src} src={src} alt="Project page" />;
+          })}
+        </SwiperSlideContent>
+      </SwiperSlide>
+
+      <SwiperSlide className="slider-slide">
+        <SwiperSlideContent
           slideCover={taskyCover}
           subtitle="UX/UI design"
           title="Polestar"
@@ -39,13 +61,13 @@ const Slider = () => {
         </SwiperSlideContent>
       </SwiperSlide>
 
-      <SwiperSlide className="slider-slide">
+      <SwiperSlide>
         <SwiperSlideContent
-          slideCover={kramCover}
-          subtitle="Design | Development | Testing"
-          title="Kram"
+          slideCover={bettingCover}
+          subtitle="UX Research | UX/UI Design"
+          title="Wizcric"
         >
-          {KRAM_IMAGES.map(({ src }) => {
+          {BETTING_IMAGES.map(({ src }) => {
             return <LoadableImage key={src} src={src} alt="Project page" />;
           })}
         </SwiperSlideContent>
