@@ -33,7 +33,7 @@ const HeaderLinks = ({ isSideBar }) => {
       <a
         className="header-links-item"
         target="_blank"
-        href="https://www.upwork.com/agencies/~01885e02e837a4498e/"
+        href="https://www.upwork.com/ag/gronatech"
         rel="noreferrer"
       >
         <UpWorkIcon className="header-links-icon" />

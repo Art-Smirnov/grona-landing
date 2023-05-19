@@ -27,7 +27,7 @@ const FollowUs = () => {
 
         <a
           target="_blank"
-          href="https://www.upwork.com/agencies/~01885e02e837a4498e/"
+          href="https://www.upwork.com/ag/gronatech"
           rel="noreferrer"
           className="social-links-card"
         >
