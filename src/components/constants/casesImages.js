@@ -71,7 +71,6 @@ import bbqImage9 from '../images/caseBbqBox/9.png';
 import bbqImage10 from '../images/caseBbqBox/10.png';
 import bbqImage11 from '../images/caseBbqBox/11.png';
 import bbqImage12 from '../images/caseBbqBox/12.png';
-import bbqImage13 from '../images/caseBbqBox/13.png';
 
 export const TASKY_IMAGES = [
   { src: taskyImage1 },
@@ -153,5 +152,4 @@ export const BBQ_IMAGES = [
   { src: bbqImage10 },
   { src: bbqImage11 },
   { src: bbqImage12 },
-  { src: bbqImage13 },
 ];
