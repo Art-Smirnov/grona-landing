@@ -153,3 +153,10 @@ export const BBQ_IMAGES = [
   { src: bbqImage11 },
   { src: bbqImage12 },
 ];
+
+export const IMAGES = {
+  'bbq-box': BBQ_IMAGES,
+  wizcric: BETTING_IMAGES,
+  kram: KRAM_IMAGES,
+  polestar: TASKY_IMAGES,
+};

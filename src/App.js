@@ -6,6 +6,7 @@ import Team from './components/Team';
 import FollowUs from './components/FollowUs';
 import Contact from './components/Contact';
 import Footer from './components/Footer';
+import { Outlet } from 'react-router-dom';
 
 import './App.sass';
 
@@ -20,6 +21,7 @@ function App() {
       <Contact />
       <FollowUs />
       <Footer />
+      <Outlet />
     </div>
   );
 }

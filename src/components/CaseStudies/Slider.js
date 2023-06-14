@@ -11,14 +11,6 @@ import bettingCoverVertical from '../images/caseBetting/bettingCoverVertical.png
 import bbqCoverHorizontal from '../images/caseBbqBox/bbqCoverHorizontal.png';
 import bbqCoverVertical from '../images/caseBbqBox/bbqCoverVertical.png';
 
-import {
-  BETTING_IMAGES,
-  KRAM_IMAGES,
-  TASKY_IMAGES,
-  BBQ_IMAGES,
-} from '../constants/casesImages';
-import LoadableImage from '../shared/LoadableImage';
-
 const Slider = () => {
   const { isMobile, screenWidth } = useScreen(575);
   const isThreePreviews = screenWidth >= 1240 || screenWidth < 576;
@@ -46,11 +38,8 @@ const Slider = () => {
           slideCover={bbqCover}
           subtitle="UX/UI Design / Web Development"
           title="BBQ BOX"
-        >
-          {BBQ_IMAGES.map(({ src }) => {
-            return <LoadableImage key={src} src={src} alt="Project page" />;
-          })}
-        </SwiperSlideContent>
+          url="bbq-box"
+        />
       </SwiperSlide>
 
       <SwiperSlide>
@@ -58,11 +47,8 @@ const Slider = () => {
           slideCover={bettingCover}
           subtitle="UX Research | UX/UI Design"
           title="Wizcric"
-        >
-          {BETTING_IMAGES.map(({ src }) => {
-            return <LoadableImage key={src} src={src} alt="Project page" />;
-          })}
-        </SwiperSlideContent>
+          url="wizcric"
+        />
       </SwiperSlide>
 
       <SwiperSlide className="slider-slide">
@@ -70,11 +56,8 @@ const Slider = () => {
           slideCover={kramCover}
           subtitle="Design | Development | Testing"
           title="Kram"
-        >
-          {KRAM_IMAGES.map(({ src }) => {
-            return <LoadableImage key={src} src={src} alt="Project page" />;
-          })}
-        </SwiperSlideContent>
+          url="kram"
+        />
       </SwiperSlide>
 
       <SwiperSlide className="slider-slide">
@@ -82,11 +65,8 @@ const Slider = () => {
           slideCover={taskyCover}
           subtitle="UX/UI design"
           title="Polestar"
-        >
-          {TASKY_IMAGES.map(({ src }) => {
-            return <LoadableImage key={src} src={src} alt="Project page" />;
-          })}
-        </SwiperSlideContent>
+          url="polestar"
+        />
       </SwiperSlide>
 
       <SwiperSlide></SwiperSlide>

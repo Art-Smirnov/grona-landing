@@ -1,0 +1,54 @@
+@import '../../styles/variables'
+
+.container__modal
+  &.container
+    @media screen and (min-width: 1440px)
+      max-width: 1417px
+
+
+.modal
+  box-sizing: border-box
+  position: relative
+  top: 45%
+  left: 50%
+  transform: translate(-50%, -50%)
+  height: 85vh
+  background-color: $white
+  overflow-y: auto
+
+  @media screen and (min-width: 576px)
+    top: 50%
+    height: 90vh
+
+  img
+    width: 100%
+    display: block
+
+.modal-close-button
+  background-color: transparent
+  border: none
+  margin-left: auto
+  //margin-top: 32px
+  cursor: pointer
+  display: block
+  padding: 0
+
+  @media screen and (min-width: 576px)
+    position: fixed
+    right: 0
+    padding-top: 0
+  //margin: 0
+
+  svg
+    width: 80px
+    height: 80px
+    stroke: $white
+    transition: stroke $transition
+
+    @media screen and (max-width: 1023px)
+      width: 40px
+      height: 40px
+
+  &:hover
+    svg
+      stroke: $green
