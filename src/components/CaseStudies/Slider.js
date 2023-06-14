@@ -41,6 +41,30 @@ const Slider = () => {
       // onSwiper={(swiper) => console.log(swiper)}
       // onSlideChange={() => console.log('slide change')}
     >
+      <SwiperSlide>
+        <SwiperSlideContent
+          slideCover={bbqCover}
+          subtitle="UX/UI Design / Web Development"
+          title="BBQ BOX"
+        >
+          {BBQ_IMAGES.map(({ src }) => {
+            return <LoadableImage key={src} src={src} alt="Project page" />;
+          })}
+        </SwiperSlideContent>
+      </SwiperSlide>
+
+      <SwiperSlide>
+        <SwiperSlideContent
+          slideCover={bettingCover}
+          subtitle="UX Research | UX/UI Design"
+          title="Wizcric"
+        >
+          {BETTING_IMAGES.map(({ src }) => {
+            return <LoadableImage key={src} src={src} alt="Project page" />;
+          })}
+        </SwiperSlideContent>
+      </SwiperSlide>
+
       <SwiperSlide className="slider-slide">
         <SwiperSlideContent
           slideCover={kramCover}
@@ -60,30 +84,6 @@ const Slider = () => {
           title="Polestar"
         >
           {TASKY_IMAGES.map(({ src }) => {
-            return <LoadableImage key={src} src={src} alt="Project page" />;
-          })}
-        </SwiperSlideContent>
-      </SwiperSlide>
-
-      <SwiperSlide>
-        <SwiperSlideContent
-          slideCover={bettingCover}
-          subtitle="UX Research | UX/UI Design"
-          title="Wizcric"
-        >
-          {BETTING_IMAGES.map(({ src }) => {
-            return <LoadableImage key={src} src={src} alt="Project page" />;
-          })}
-        </SwiperSlideContent>
-      </SwiperSlide>
-
-      <SwiperSlide>
-        <SwiperSlideContent
-          slideCover={bbqCover}
-          subtitle="UX/UI Design / Web Development"
-          title="BBQ BOX"
-        >
-          {BBQ_IMAGES.map(({ src }) => {
             return <LoadableImage key={src} src={src} alt="Project page" />;
           })}
         </SwiperSlideContent>
