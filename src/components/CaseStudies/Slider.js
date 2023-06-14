@@ -8,11 +8,14 @@ import kramCoverHorizontal from '../images/caseKram/kramCoverHorizontal.png';
 import kramCoverVertical from '../images/caseKram/kramCoverVertical.png';
 import bettingCoverHorizontal from '../images/caseBetting/bettingCoverHorizontal.png';
 import bettingCoverVertical from '../images/caseBetting/bettingCoverVertical.png';
+import bbqCoverHorizontal from '../images/caseBbqBox/bbqCoverHorizontal.png';
+import bbqCoverVertical from '../images/caseBbqBox/bbqCoverVertical.png';
 
 import {
   BETTING_IMAGES,
   KRAM_IMAGES,
   TASKY_IMAGES,
+  BBQ_IMAGES,
 } from '../constants/casesImages';
 import LoadableImage from '../shared/LoadableImage';
 
@@ -24,6 +27,7 @@ const Slider = () => {
   const bettingCover = isMobile()
     ? bettingCoverVertical
     : bettingCoverHorizontal;
+  const bbqCover = isMobile() ? bbqCoverVertical : bbqCoverHorizontal;
 
   return (
     <Swiper
@@ -68,6 +72,18 @@ const Slider = () => {
           title="Wizcric"
         >
           {BETTING_IMAGES.map(({ src }) => {
+            return <LoadableImage key={src} src={src} alt="Project page" />;
+          })}
+        </SwiperSlideContent>
+      </SwiperSlide>
+
+      <SwiperSlide>
+        <SwiperSlideContent
+          slideCover={bbqCover}
+          subtitle="UX/UI Design / Web Development"
+          title="BBQ BOX"
+        >
+          {BBQ_IMAGES.map(({ src }) => {
             return <LoadableImage key={src} src={src} alt="Project page" />;
           })}
         </SwiperSlideContent>

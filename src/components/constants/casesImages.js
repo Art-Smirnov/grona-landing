@@ -59,6 +59,20 @@ import bettingImage15 from '../images/caseBetting/15.jpg';
 import bettingImage16 from '../images/caseBetting/16.jpg';
 import bettingImage17 from '../images/caseBetting/17.jpg';
 
+import bbqImage1 from '../images/caseBbqBox/1.png';
+import bbqImage2 from '../images/caseBbqBox/2.png';
+import bbqImage3 from '../images/caseBbqBox/3.png';
+import bbqImage4 from '../images/caseBbqBox/4.png';
+import bbqImage5 from '../images/caseBbqBox/5.png';
+import bbqImage6 from '../images/caseBbqBox/6.png';
+import bbqImage7 from '../images/caseBbqBox/7.png';
+import bbqImage8 from '../images/caseBbqBox/8.png';
+import bbqImage9 from '../images/caseBbqBox/9.png';
+import bbqImage10 from '../images/caseBbqBox/10.png';
+import bbqImage11 from '../images/caseBbqBox/11.png';
+import bbqImage12 from '../images/caseBbqBox/12.png';
+import bbqImage13 from '../images/caseBbqBox/13.png';
+
 export const TASKY_IMAGES = [
   { src: taskyImage1 },
   { src: taskyImage2 },
@@ -124,4 +138,20 @@ export const BETTING_IMAGES = [
   { src: bettingImage15 },
   { src: bettingImage16 },
   { src: bettingImage17 },
+];
+
+export const BBQ_IMAGES = [
+  { src: bbqImage1 },
+  { src: bbqImage2 },
+  { src: bbqImage3 },
+  { src: bbqImage4 },
+  { src: bbqImage5 },
+  { src: bbqImage6 },
+  { src: bbqImage7 },
+  { src: bbqImage8 },
+  { src: bbqImage9 },
+  { src: bbqImage10 },
+  { src: bbqImage11 },
+  { src: bbqImage12 },
+  { src: bbqImage13 },
 ];
