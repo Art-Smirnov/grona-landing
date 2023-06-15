@@ -1,14 +1,15 @@
 import { ReactComponent as ArrowIcon } from '../images/arrow-forward.svg';
 import Slider from './Slider';
-
 import 'swiper/swiper-bundle.css';
+import { SLIDES_LENGTH } from '../constants/slideItems';
+
 import './CaseStudies.sass';
 
 const CaseStudies = () => {
   return (
     <div id="case-studies" className="container case-studies">
       <div className="case-studies-subtitles">
-        <span className="case-studies-quantity">1 &mdash; 4</span>
+        <span className="case-studies-quantity">1 &mdash; {SLIDES_LENGTH}</span>
         <ArrowIcon />
       </div>
       <div className="case-studies-content">
