@@ -10,9 +10,6 @@ import './CaseModal.sass';
 const CaseModal = () => {
   const navigate = useNavigate();
   const { caseName } = useParams();
-  // const pathname = window.location.pathname;
-  // const caseName = pathname.replace('/cases/', '');
-
   const images = IMAGES[caseName];
 
   if (!images) return null;
