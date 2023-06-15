@@ -1,7 +1,7 @@
 import React from 'react';
 import Modal from '@mui/material/Modal';
 import { ReactComponent as CloseIcon } from '../images/close.svg';
-import { useNavigate, useParams } from 'react-router-dom';
+import { useNavigate } from 'react-router-dom';
 import { IMAGES } from '../constants/casesImages';
 import LoadableImage from '../shared/LoadableImage';
 
@@ -9,7 +9,10 @@ import './CaseModal.sass';
 
 const CaseModal = () => {
   const navigate = useNavigate();
-  const { caseName } = useParams();
+  // const { caseName } = useParams();
+  const pathname = window.location.pathname;
+  const caseName = pathname.replace('/cases/', '');
+
   const images = IMAGES[caseName];
 
   if (!images) return null;

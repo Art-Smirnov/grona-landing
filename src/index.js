@@ -18,11 +18,29 @@ const router = createBrowserRouter([
     //     element: <CaseModal />,
     //   },
     // ],
+    children: [
+      {
+        path: 'cases/bbq-box',
+        element: <CaseModal />,
+      },
+      {
+        path: 'cases/wizcric',
+        element: <CaseModal />,
+      },
+      {
+        path: 'cases/kram',
+        element: <CaseModal />,
+      },
+      {
+        path: 'cases/polestar',
+        element: <CaseModal />,
+      },
+    ],
   },
-  {
-    path: 'cases/:caseName',
-    element: <CaseModal />,
-  },
+  // {
+  //   path: 'cases/:caseName',
+  //   element: <CaseModal />,
+  // },
 ]);
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
