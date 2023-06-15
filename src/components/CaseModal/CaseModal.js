@@ -15,7 +15,7 @@ const CaseModal = () => {
   if (!images) return null;
   const handleBack = (e) => {
     e.stopPropagation();
-    navigate(-1);
+    navigate('/');
   };
 
   return (
