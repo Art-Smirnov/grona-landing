@@ -5,7 +5,7 @@ import { Link } from 'react-router-dom';
 const SwiperSlideContent = ({ slideCover, subtitle, title, url }) => {
   return (
     <div className="slider-slide-content">
-      <Link to={`cases/${url}`}>
+      <Link to={`/cases/${url}`}>
         <div className="slider-slide-image-container">
           <img
             className="slider-slide-image"

@@ -8,7 +8,7 @@ const CaseStudies = () => {
   return (
     <div id="case-studies" className="container case-studies">
       <div className="case-studies-subtitles">
-        <span className="case-studies-quantity">1 &mdash; 5</span>
+        <span className="case-studies-quantity">1 &mdash; 4</span>
         <ArrowIcon />
       </div>
       <div className="case-studies-content">
