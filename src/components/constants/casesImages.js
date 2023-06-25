@@ -93,6 +93,28 @@ import {
   kramImage19,
 } from '../images/caseKram';
 
+import {
+  stephenImage1,
+  stephenImage2,
+  stephenImage3,
+  stephenImage4,
+  stephenImage5,
+  stephenImage6,
+  stephenImage7,
+  stephenImage8,
+} from '../images/caseStephen';
+
+export const STEPHEN_IMAGES = [
+  { src: stephenImage1 },
+  { src: stephenImage2 },
+  { src: stephenImage3 },
+  { src: stephenImage4 },
+  { src: stephenImage5 },
+  { src: stephenImage6 },
+  { src: stephenImage7 },
+  { src: stephenImage8 },
+];
+
 export const YOGA_IMAGES = [
   { src: yogaImage1 },
   { src: yogaImage2 },
@@ -189,6 +211,7 @@ export const BBQ_IMAGES = [
 ];
 
 export const IMAGES = {
+  portfolio: STEPHEN_IMAGES,
   'play-retreat': YOGA_IMAGES,
   'bbq-box': BBQ_IMAGES,
   wizcric: BETTING_IMAGES,

@@ -1,0 +1,10 @@
+export { default as stephenCoverHorizontal } from './stephenCoverHorizontal.png';
+export { default as stephenCoverVertical } from './stephenCoverVertical.png';
+export { default as stephenImage1 } from './1.jpg';
+export { default as stephenImage2 } from './2.jpg';
+export { default as stephenImage3 } from './3.jpg';
+export { default as stephenImage4 } from './4.jpg';
+export { default as stephenImage5 } from './5.jpg';
+export { default as stephenImage6 } from './6.jpg';
+export { default as stephenImage7 } from './7.jpg';
+export { default as stephenImage8 } from './8.jpg';

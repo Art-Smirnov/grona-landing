@@ -6,14 +6,27 @@ import {
 } from '../images/caseBetting';
 import { kramCoverHorizontal, kramCoverVertical } from '../images/caseKram';
 import { taskyCoverHorizontal, taskyCoverVertical } from '../images/caseTasky';
+import {
+  stephenCoverHorizontal,
+  stephenCoverVertical,
+} from '../images/caseStephen';
 
 export const SLIDE_ITEMS = [
+  {
+    slideCover: {
+      horizontal: stephenCoverHorizontal,
+      vertical: stephenCoverVertical,
+    },
+    subtitle: 'React Development',
+    title: 'Portfolio Website',
+    url: 'portfolio',
+  },
   {
     slideCover: {
       horizontal: yogaCoverHorizontal,
       vertical: yogaCoverVertical,
     },
-    subtitle: 'UX/UI Design / Webflow Development ',
+    subtitle: 'UX/UI Design / Webflow Development',
     title: 'Play Retreat',
     url: 'play-retreat',
   },
@@ -22,7 +35,7 @@ export const SLIDE_ITEMS = [
       horizontal: bbqCoverHorizontal,
       vertical: bbqCoverVertical,
     },
-    subtitle: 'UX/UI Design / Web Development',
+    subtitle: 'UX/UI Design / Webflow Development',
     title: 'BBQ BOX',
     url: 'bbq-box',
   },
