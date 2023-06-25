@@ -20,9 +20,9 @@ const Slider = () => {
       // onSwiper={(swiper) => console.log(swiper)}
       // onSlideChange={() => console.log('slide change')}
     >
-      {SLIDE_ITEMS.map(({ id, slideCover, subtitle, title, url }) => {
+      {SLIDE_ITEMS.map(({ slideCover, subtitle, title, url }, index) => {
         return (
-          <SwiperSlide key={id}>
+          <SwiperSlide key={index}>
             <SwiperSlideContent
               slideCover={slideCover}
               subtitle={subtitle}

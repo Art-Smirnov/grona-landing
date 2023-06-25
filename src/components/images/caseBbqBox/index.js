@@ -1,0 +1,14 @@
+export { default as bbqCoverHorizontal } from './bbqCoverHorizontal.png';
+export { default as bbqCoverVertical } from './bbqCoverVertical.png';
+export { default as bbqImage1 } from './1.png';
+export { default as bbqImage2 } from './2.png';
+export { default as bbqImage3 } from './3.png';
+export { default as bbqImage4 } from './4.png';
+export { default as bbqImage5 } from './5.png';
+export { default as bbqImage6 } from './6.png';
+export { default as bbqImage7 } from './7.png';
+export { default as bbqImage8 } from './8.png';
+export { default as bbqImage9 } from './9.png';
+export { default as bbqImage10 } from './10.png';
+export { default as bbqImage11 } from './11.png';
+export { default as bbqImage12 } from './12.png';

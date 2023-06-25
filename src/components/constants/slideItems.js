@@ -1,15 +1,23 @@
-import bbqCoverHorizontal from '../images/caseBbqBox/bbqCoverHorizontal.png';
-import bbqCoverVertical from '../images/caseBbqBox/bbqCoverVertical.png';
-import bettingCoverHorizontal from '../images/caseBetting/bettingCoverHorizontal.png';
-import bettingCoverVertical from '../images/caseBetting/bettingCoverVertical.png';
-import kramCoverHorizontal from '../images/caseKram/kramCoverHorizontal.png';
-import kramCoverVertical from '../images/caseKram/kramCoverVertical.png';
-import taskyCoverHorizontal from '../images/caseTasky/taskyCoverHorizontal.png';
-import taskyCoverVertical from '../images/caseTasky/taskyCoverVertical.png';
+import { yogaCoverHorizontal, yogaCoverVertical } from '../images/caseYoga';
+import { bbqCoverHorizontal, bbqCoverVertical } from '../images/caseBbqBox';
+import {
+  bettingCoverHorizontal,
+  bettingCoverVertical,
+} from '../images/caseBetting';
+import { kramCoverHorizontal, kramCoverVertical } from '../images/caseKram';
+import { taskyCoverHorizontal, taskyCoverVertical } from '../images/caseTasky';
 
 export const SLIDE_ITEMS = [
   {
-    id: 1,
+    slideCover: {
+      horizontal: yogaCoverHorizontal,
+      vertical: yogaCoverVertical,
+    },
+    subtitle: 'UX/UI Design / Webflow Development ',
+    title: 'Play Retreat',
+    url: 'play-retreat',
+  },
+  {
     slideCover: {
       horizontal: bbqCoverHorizontal,
       vertical: bbqCoverVertical,
@@ -19,7 +27,6 @@ export const SLIDE_ITEMS = [
     url: 'bbq-box',
   },
   {
-    id: 2,
     slideCover: {
       horizontal: bettingCoverHorizontal,
       vertical: bettingCoverVertical,
@@ -29,7 +36,6 @@ export const SLIDE_ITEMS = [
     url: 'wizcric',
   },
   {
-    id: 3,
     slideCover: {
       horizontal: kramCoverHorizontal,
       vertical: kramCoverVertical,
@@ -39,7 +45,6 @@ export const SLIDE_ITEMS = [
     url: 'kram',
   },
   {
-    id: 4,
     slideCover: {
       horizontal: taskyCoverHorizontal,
       vertical: taskyCoverVertical,

@@ -1,0 +1,12 @@
+export { default as yogaCoverHorizontal } from './yogaCoverHorizontal.png';
+export { default as yogaCoverVertical } from './yogaCoverVertical.png';
+export { default as yogaImage1 } from './1.jpg';
+export { default as yogaImage2 } from './2.jpg';
+export { default as yogaImage3 } from './3.jpg';
+export { default as yogaImage4 } from './4.jpg';
+export { default as yogaImage5 } from './5.jpg';
+export { default as yogaImage6 } from './6.jpg';
+export { default as yogaImage7 } from './7.jpg';
+export { default as yogaImage8 } from './8.jpg';
+export { default as yogaImage9 } from './9.jpg';
+export { default as yogaImage10 } from './10.jpg';

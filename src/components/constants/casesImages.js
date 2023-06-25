@@ -1,76 +1,110 @@
-import taskyImage1 from '../images/caseTasky/1.jpg';
-import taskyImage2 from '../images/caseTasky/2.jpg';
-import taskyImage3 from '../images/caseTasky/3.jpg';
-import taskyImage4 from '../images/caseTasky/4.jpg';
-import taskyImage5 from '../images/caseTasky/5.jpg';
-import taskyImage6 from '../images/caseTasky/6.jpg';
-import taskyImage7 from '../images/caseTasky/7.jpg';
-import taskyImage8 from '../images/caseTasky/8.jpg';
-import taskyImage9 from '../images/caseTasky/9.jpg';
-import taskyImage10 from '../images/caseTasky/10.jpg';
-import taskyImage11 from '../images/caseTasky/11.jpg';
-import taskyImage12 from '../images/caseTasky/12.jpg';
-import taskyImage13 from '../images/caseTasky/13.jpg';
-import taskyImage14 from '../images/caseTasky/14.jpg';
-import taskyImage15 from '../images/caseTasky/15.jpg';
-import taskyImage16 from '../images/caseTasky/16.jpg';
-import taskyImage17 from '../images/caseTasky/17.jpg';
-import taskyImage18 from '../images/caseTasky/18.jpg';
-import taskyImage19 from '../images/caseTasky/19.jpg';
-import taskyImage20 from '../images/caseTasky/20.jpg';
-import taskyImage21 from '../images/caseTasky/21.jpg';
-import taskyImage22 from '../images/caseTasky/22.jpg';
+import {
+  yogaImage1,
+  yogaImage2,
+  yogaImage3,
+  yogaImage4,
+  yogaImage5,
+  yogaImage6,
+  yogaImage7,
+  yogaImage8,
+  yogaImage9,
+  yogaImage10,
+} from '../images/caseYoga';
 
-import kramImage1 from '../images/caseKram/1.jpg';
-import kramImage2 from '../images/caseKram/2.jpg';
-import kramImage3 from '../images/caseKram/3.jpg';
-import kramImage4 from '../images/caseKram/4.jpg';
-import kramImage5 from '../images/caseKram/5.jpg';
-import kramImage6 from '../images/caseKram/6.jpg';
-import kramImage7 from '../images/caseKram/7.jpg';
-import kramImage8 from '../images/caseKram/8.jpg';
-import kramImage9 from '../images/caseKram/9.jpg';
-import kramImage10 from '../images/caseKram/10.jpg';
-import kramImage11 from '../images/caseKram/11.jpg';
-import kramImage12 from '../images/caseKram/12.jpg';
-import kramImage13 from '../images/caseKram/13.jpg';
-import kramImage14 from '../images/caseKram/14.jpg';
-import kramImage15 from '../images/caseKram/15.jpg';
-import kramImage16 from '../images/caseKram/16.jpg';
-import kramImage17 from '../images/caseKram/17.jpg';
-import kramImage18 from '../images/caseKram/18.jpg';
-import kramImage19 from '../images/caseKram/19.jpg';
+import {
+  taskyImage1,
+  taskyImage2,
+  taskyImage3,
+  taskyImage4,
+  taskyImage5,
+  taskyImage6,
+  taskyImage7,
+  taskyImage8,
+  taskyImage9,
+  taskyImage10,
+  taskyImage11,
+  taskyImage12,
+  taskyImage13,
+  taskyImage14,
+  taskyImage15,
+  taskyImage16,
+  taskyImage17,
+  taskyImage18,
+  taskyImage19,
+  taskyImage20,
+  taskyImage21,
+  taskyImage22,
+} from '../images/caseTasky';
 
-import bettingImage1 from '../images/caseBetting/1.jpg';
-import bettingImage2 from '../images/caseBetting/2.jpg';
-import bettingImage3 from '../images/caseBetting/3.jpg';
-import bettingImage4 from '../images/caseBetting/4.jpg';
-import bettingImage5 from '../images/caseBetting/5.jpg';
-import bettingImage6 from '../images/caseBetting/6.jpg';
-import bettingImage7 from '../images/caseBetting/7.jpg';
-import bettingImage8 from '../images/caseBetting/8.jpg';
-import bettingImage9 from '../images/caseBetting/9.jpg';
-import bettingImage10 from '../images/caseBetting/10.jpg';
-import bettingImage11 from '../images/caseBetting/11.jpg';
-import bettingImage12 from '../images/caseBetting/12.jpg';
-import bettingImage13 from '../images/caseBetting/13.jpg';
-import bettingImage14 from '../images/caseBetting/14.jpg';
-import bettingImage15 from '../images/caseBetting/15.jpg';
-import bettingImage16 from '../images/caseBetting/16.jpg';
-import bettingImage17 from '../images/caseBetting/17.jpg';
+import {
+  bbqImage1,
+  bbqImage2,
+  bbqImage3,
+  bbqImage4,
+  bbqImage5,
+  bbqImage6,
+  bbqImage7,
+  bbqImage8,
+  bbqImage9,
+  bbqImage10,
+  bbqImage11,
+  bbqImage12,
+} from '../images/caseBbqBox';
 
-import bbqImage1 from '../images/caseBbqBox/1.png';
-import bbqImage2 from '../images/caseBbqBox/2.png';
-import bbqImage3 from '../images/caseBbqBox/3.png';
-import bbqImage4 from '../images/caseBbqBox/4.png';
-import bbqImage5 from '../images/caseBbqBox/5.png';
-import bbqImage6 from '../images/caseBbqBox/6.png';
-import bbqImage7 from '../images/caseBbqBox/7.png';
-import bbqImage8 from '../images/caseBbqBox/8.png';
-import bbqImage9 from '../images/caseBbqBox/9.png';
-import bbqImage10 from '../images/caseBbqBox/10.png';
-import bbqImage11 from '../images/caseBbqBox/11.png';
-import bbqImage12 from '../images/caseBbqBox/12.png';
+import {
+  bettingImage1,
+  bettingImage2,
+  bettingImage3,
+  bettingImage4,
+  bettingImage5,
+  bettingImage6,
+  bettingImage7,
+  bettingImage8,
+  bettingImage9,
+  bettingImage10,
+  bettingImage11,
+  bettingImage12,
+  bettingImage13,
+  bettingImage14,
+  bettingImage15,
+  bettingImage16,
+  bettingImage17,
+} from '../images/caseBetting';
+
+import {
+  kramImage1,
+  kramImage2,
+  kramImage3,
+  kramImage4,
+  kramImage5,
+  kramImage6,
+  kramImage7,
+  kramImage8,
+  kramImage9,
+  kramImage10,
+  kramImage11,
+  kramImage12,
+  kramImage13,
+  kramImage14,
+  kramImage15,
+  kramImage16,
+  kramImage17,
+  kramImage18,
+  kramImage19,
+} from '../images/caseKram';
+
+export const YOGA_IMAGES = [
+  { src: yogaImage1 },
+  { src: yogaImage2 },
+  { src: yogaImage3 },
+  { src: yogaImage4 },
+  { src: yogaImage5 },
+  { src: yogaImage6 },
+  { src: yogaImage7 },
+  { src: yogaImage8 },
+  { src: yogaImage9 },
+  { src: yogaImage10 },
+];
 
 export const TASKY_IMAGES = [
   { src: taskyImage1 },
@@ -155,6 +189,7 @@ export const BBQ_IMAGES = [
 ];
 
 export const IMAGES = {
+  'play-retreat': YOGA_IMAGES,
   'bbq-box': BBQ_IMAGES,
   wizcric: BETTING_IMAGES,
   kram: KRAM_IMAGES,
